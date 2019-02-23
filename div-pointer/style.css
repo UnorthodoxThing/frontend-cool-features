@@ -71,8 +71,13 @@ float: right;
   text-align: center;
 }
 
+/* section div pointer */
+.arrowbox4 {
+  border: 2px rgb(211, 220, 227) solid;
+}
+
 /* Left arrow pointer */
-.arrowbox1:after, .arrowbox2:after, .arrowbox3:after, .arrowbox4:after {
+.arrowbox1:after, .arrowbox2:after, .arrowbox3:after {
   content: ' ';
   width: 0px;
   height: 0px;
@@ -84,6 +89,28 @@ float: right;
   left: 100%;
   top: 50%;
   margin-top: -10px;
+}
+
+/* section div pointer:after */
+
+.arrowbox4:after {
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  border: 2px rgb(211, 220, 227) solid;
+  background: rgb(125, 209, 241);
+  z-index: 999;
+  border-top: 2px solid rgb(211, 220, 227);
+  border-right: 2px solid rgb(211, 220, 227);
+  border-bottom: 0px solid rgb(211, 220, 227);
+  border-left: 0px solid rgb(211, 220, 227);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  transform: rotate(45deg);
+
 }
 
 /* Right arrow pointer */
