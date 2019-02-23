@@ -49,10 +49,11 @@ footer {
 
 /* Section */
 section {
-width: 150px;
+width: 155px;
 height: 150px;
-display: flex;
-justify-content: flex-end;
+margin: 0.5em;
+border: 1px rgb(211, 220, 227) solid;
+float: right;
 }
 
 /* Div Comment Container  */
