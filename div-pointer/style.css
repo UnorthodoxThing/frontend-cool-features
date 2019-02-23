@@ -74,6 +74,12 @@ float: right;
 /* section div pointer */
 .arrowbox4 {
   border: 2px rgb(211, 220, 227) solid;
+  display: none;
+}
+
+/* section feature */
+section:hover > .arrowbox4 {
+  display: block;
 }
 
 /* Left arrow pointer */
@@ -92,7 +98,6 @@ float: right;
 }
 
 /* section div pointer:after */
-
 .arrowbox4:after {
   content: ' ';
   width: 20px;
@@ -110,7 +115,6 @@ float: right;
   margin-top: -10px;
   margin-left: -10px;
   transform: rotate(45deg);
-
 }
 
 /* Right arrow pointer */
