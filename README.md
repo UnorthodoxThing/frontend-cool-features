@@ -23,7 +23,7 @@ Play with the settings of an image's border colour, blur and spacing.
 
 -YouTube _WesBos_
 
-    -Adjusting Image Background Colour, Blur and Spacing with CSS Variables
+    -Adjusting Image Border Colour, Blur and Spacing with CSS Variables
 
 ## License
 
