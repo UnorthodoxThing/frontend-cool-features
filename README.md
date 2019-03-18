@@ -5,14 +5,25 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 ### Table Of Contents
 
 * [Div-Pointer](#Div-Pointer)
+* [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjusting Image Background Colour, Blur and Spacing with CSS Variables)
 
 ## Div-Pointer
 
 A comment div with a pointer, like a speech bubble.
 
+## Adjusting Image Border Colour, Blur and Spacing with CSS Variables
+
+Play with the settings of an image's border colour, blur and spacing.
+
 ## Credits
 
 -YouTube _Arjun Khara_
+
+    -Div-Pointer
+
+-YouTube _WesBos_
+
+    -Adjusting Image Background Colour, Blur and Spacing with CSS Variables
 
 ## License
 
