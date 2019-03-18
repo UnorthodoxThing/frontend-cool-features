@@ -29,7 +29,7 @@ Play with the settings of an image's border colour, blur and spacing.
 
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2019 Caroline Rozali
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
