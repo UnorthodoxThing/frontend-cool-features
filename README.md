@@ -5,7 +5,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 ### Table Of Contents
 
 * [Div-Pointer](#Div-Pointer)
-* [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjusting Image Background Colour, Blur and Spacing with CSS Variables)
+* [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjusting\Image\Background\Colour,\Blur\and\Spacing\with\CSS\Variables)
 
 ## Div-Pointer
 
