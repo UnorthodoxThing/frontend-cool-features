@@ -11,7 +11,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 
 A comment div with a pointer, like a speech bubble.
 
-## Adjusting-Image-Border-Colour-Blur-and-Spacing-with-CSS-Variables
+## Adjusting-Image-Settings
 
 Play with the settings of an image's border colour, blur and spacing.
 
