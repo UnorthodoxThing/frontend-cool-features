@@ -1,6 +1,6 @@
-# Adjusting-Image-Settings
+# Adjustable-Image-Settings
 
-Play with the settings of an image's border colour, blur and spacing. Via CSS variables and some JS `addEventListener` adjustable settings were made.
+Play with the settings of an image's border colour, blur and spacing. Created via CSS variables and some JS `addEventListener` adjustable settings were made.
 
 # Credits
 

@@ -2,32 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Adjusting Image Settings</title>
+    <title>Adjustable Image Settings</title>
     <style>
       :root {
         --base: #eee;
         --spacing: 10px;
         --blur: 10px;
       }
+
+      h2 {
+        display: block;
+        text-align: center;
+      }
+
+      input {
+        /* Make slider appear vertical for the following browsers:
+          Chrome, IE */
+        appearance: vertical;
+        -webkit-appearance: slider-vertical;
+        writing-mode: bt-lr;
+      }
     </style>
   </head>
   <body>
-    <h2>Play with <span class="colour-change">Image</span> Settings!</h2>
+      <h2>Play with <span class="colour-change">Image</span> Settings!</h2>
 
-    <div class="controls">
-      <label for="spacing">Spacing:</label>
-      <input id="spacing" type="range" name="blur" min="0" max="200" value="10">
+            <!--
+            todo:
+            For each, add label tag, input tag
+            add Blur
+            add color base
 
-      <!--
-      todo:
-      For each, add label tag, input tag
-      add Blur
-      add color base
+            add img tag
+           -->
 
-      add img tag
-     -->
+      <div class="controls one">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" name="blur" min="0" max="200" value="10">
+      </div> <!-- End of class="controls one"-->
 
-    </div>
+      <div class="controls two">
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="200" value="10">
+      </div><!-- End of class="controls two"-->
+
+      <div class="controls three">
+        <label for="color">Base Colour:</label>
+        <input id="color" type="color" name="base" value="#cd3f3f">
+      </div><!-- End of class="controls three"-->
+
+    <figure>
+      <img src="artist-iu.jpg" alt="korean singer IU">
+      <figcaption>Korean singer IU</figcaption>
+    </figure>
 
     <script type="text/javascript">
 
