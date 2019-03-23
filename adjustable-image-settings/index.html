@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Adjustable Image Settings</title>
     <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
       :root {
         --base: #eee;
         --spacing: 10px;
@@ -15,48 +22,103 @@
         text-align: center;
       }
 
+      .one, .two {
+        margin: 0 auto;
+      }
+
+      .three {
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+      }
+
+      input[type="color" i] {
+        width: 15em;
+      }
+
+      .row {
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      figure {
+        display: inline-block;
+      }
+
+      figure img {
+        vertical-align: top;
+      }
+
+      figure figcaption {
+        text-align: center;
+      }
+
+      /* Mobile Version */
+      @media screen and (max-width:480px) {
+        .one, .two {
+
+        }
+      }
+
+      /* Web Version idea */
       input {
         /* Make slider appear vertical for the following browsers:
           Chrome, IE */
-        appearance: vertical;
+        /* appearance: vertical;
         -webkit-appearance: slider-vertical;
-        writing-mode: bt-lr;
+        writing-mode: bt-lr; */
       }
+
     </style>
   </head>
+
   <body>
+
       <h2>Play with <span class="colour-change">Image</span> Settings!</h2>
 
-            <!--
-            todo:
-            For each, add label tag, input tag
-            add Blur
-            add color base
+      <div class="row">
+        <div class="controls one">
+          <label for="spacing">Spacing:</label>
+          <input id="spacing" type="range" name="blur" min="0" max="200" value="10">
+        </div> <!-- End of class="controls one"-->
 
-            add img tag
-           -->
-
-      <div class="controls one">
-        <label for="spacing">Spacing:</label>
-        <input id="spacing" type="range" name="blur" min="0" max="200" value="10">
-      </div> <!-- End of class="controls one"-->
-
-      <div class="controls two">
-        <label for="blur">Blur:</label>
-        <input id="blur" type="range" name="blur" min="0" max="200" value="10">
-      </div><!-- End of class="controls two"-->
+        <div class="controls two">
+          <label for="blur">Blur:</label>
+          <input id="blur" type="range" name="blur" min="0" max="200" value="10">
+        </div><!-- End of class="controls two"-->
+      </div><!-- End of class="row"-->
 
       <div class="controls three">
         <label for="color">Base Colour:</label>
         <input id="color" type="color" name="base" value="#cd3f3f">
       </div><!-- End of class="controls three"-->
 
-    <figure>
-      <img src="artist-iu.jpg" alt="korean singer IU">
-      <figcaption>Korean singer IU</figcaption>
-    </figure>
+    <div class="container">
+      <figure>
+        <img src="artist-iu.jpg" alt="korean singer IU">
+        <figcaption>Korean singer IU</figcaption>
+      </figure>
+    </div>
 
     <script type="text/javascript">
+
+    function setMobileLayout() {
+      let controlsOne = document.querySelector(".controls one");
+      let controlsTwo = document.querySelector(".controls two");
+
+      if (window.innerWidth < 480 ) {
+        controlsOne.appendTo(".row");
+        controlsTwo.appendTo(".row");
+      }
+
+    }
 
     </script>
 
