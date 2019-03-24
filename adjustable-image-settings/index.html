@@ -11,8 +11,14 @@
       height: 100%;
     }
 
+
+    body{
+      font-family: fantasy, monospace, sans-serif;
+      background-color: rgb(82, 196, 246);
+    }
+
       :root {
-        --base: #cd3f3f;
+        --base: #bf92ad;
         --spacing: 10px;
         --blur: 10px;
       }
@@ -57,33 +63,18 @@
         display: inline-block;
         border: 1em solid;
         border-color: var(--base);
+        background-color: #eee;
+        border-width: var(--spacing);
+
       }
 
       figure img {
         vertical-align: top;
         filter: blur(var(--blur));
-        padding: var(--spacing);
       }
 
       figure figcaption {
         text-align: center;
-      }
-
-      /* Mobile Version */
-      @media screen and (max-width:480px) {
-        .one,
-        .two {
-
-        }
-      }
-
-      /* Web Version idea */
-      input {
-        /* Make slider appear vertical for the following browsers:
-          Chrome, IE */
-        /* appearance: vertical;
-        -webkit-appearance: slider-vertical;
-        writing-mode: bt-lr; */
       }
 
     </style>
@@ -96,18 +87,18 @@
       <div class="row">
         <div class="controls one">
           <label for="spacing">Spacing:</label>
-          <input id="spacing" type="range" name="spacing" min="0" max="200" data-sizing="px" value="10">
+          <input id="spacing" type="range" name="spacing" min="0" max="150" data-sizing="px" value="25">
         </div> <!-- End of class="controls one"-->
 
         <div class="controls two">
           <label for="blur">Blur:</label>
-          <input id="blur" type="range" name="blur" min="0" max="200" data-sizing="px" value="10">
+          <input id="blur" type="range" name="blur" min="0" max="15" data-sizing="px" value="5">
         </div><!-- End of class="controls two"-->
       </div><!-- End of class="row"-->
 
       <div class="controls three">
         <label for="color">Base Colour:</label>
-        <input id="color" type="color" name="base" value="#cd3f3f">
+        <input id="color" type="color" name="base" value="#bf92ad">
       </div><!-- End of class="controls three"-->
 
     <div class="container">
@@ -119,22 +110,11 @@
 
     <script type="text/javascript">
 
-    // function setMobileLayout() {
-    //   let controlsOne = document.querySelector(".controls one");
-    //   let controlsTwo = document.querySelector(".controls two");
-    //
-    //   if (window.innerWidth < 480 ) {
-    //     controlsOne.appendTo(".row");
-    //     controlsTwo.appendTo(".row");
-    //   }
-    // }
-
     const inputs = document.querySelectorAll('.controls input');
 
     function handleUpdate() {
       const suffix = this.dataset.sizing || '';
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
-      // console.log(this.name);
     }
 
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
