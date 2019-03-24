@@ -12,7 +12,7 @@
     }
 
       :root {
-        --base: #eee;
+        --base: #cd3f3f;
         --spacing: 10px;
         --blur: 10px;
       }
@@ -20,6 +20,10 @@
       h2 {
         display: block;
         text-align: center;
+      }
+
+      .colour-change {
+        color: var(--base);
       }
 
       .one, .two {
@@ -32,7 +36,7 @@
         justify-content: center;
       }
 
-      input[type="color" i] {
+      input[type="color"] {
         width: 15em;
       }
 
@@ -50,10 +54,14 @@
 
       figure {
         display: inline-block;
+        border: 1em solid;
+        border-color: var(--base);
       }
 
       figure img {
         vertical-align: top;
+        filter: blur(var(--blur));
+        padding: var(--spacing);
       }
 
       figure figcaption {
