@@ -4,8 +4,10 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 
 ### Table Of Contents
 
-* [Div-Pointer](#Div-Pointer)
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
+* [Picture-Cross-Fade](#Picture-Cross-Fade)
+* [Div-Pointer](#Div-Pointer)
+* [Page-Transition-Effect](#Page-Transition-Effect)
 
 ## Div-Pointer
 
@@ -14,6 +16,28 @@ A comment div with a pointer, like a speech bubble.
 ## Adjustable-Image-Settings
 
 Play with the settings of an image's border colour, blur and spacing.
+
+## Picture-Cross-Fade
+
+Get a gallery that cross-fade with specified time.
+
+YT _Roberto Matthews_ - [Smooth CSS Cross-Fade with no JavaScript](https://youtu.be/Y0RCPt5HpT8)
+
+NB: No JavaScript
+
+## Page-Transition-Effect
+
+Have a scroll effect by scrolling, on-click etc.
+
+By `Scroll`
+
+YT _Dev Ed_ - [Javascript Tutorial - Transition Backgrounds With CSS3](https://youtu.be/z_vvY7YX3so)
+
+YT _Traversy Media_ - [Landing Page With Smooth Scroll - 3 Options](https://youtu.be/y9nlfqT4s9s)
+
+By `OnClick`
+
+YT _Online Tutorials_ - [Pure CSS3 Smooth Scrolling To A DIV OnClick - No Javascript - Pure Html5 and CSS3 Tutorial](https://youtu.be/KbMJPNXYYnw)
 
 ## Credits
 
