@@ -27,23 +27,31 @@ NB: No JavaScript
 
 ## Page-Transition-Effect
 
-Have a scroll effect by scrolling, on-click etc.
+On scroll have a background transition effect. See 'Background-onScroll' repository.
 
 By `Scroll`
 
-YT _Dev Ed_ - [Javascript Tutorial - Transition Backgrounds With CSS3](https://youtu.be/z_vvY7YX3so) (chosen)
+## Landing-Page-01
 
 YT _Traversy Media_ - [Landing Page With Smooth Scroll - 3 Options](https://youtu.be/y9nlfqT4s9s) (/)
 
-By `OnClick`
+By `OnClick` Above-fixed dashboard
+
+## Landing-Page-02
 
 YT _Online Tutorials_ - [Pure CSS3 Smooth Scrolling To A DIV OnClick - No Javascript - Pure Html5 and CSS3 Tutorial](https://youtu.be/KbMJPNXYYnw) (/)
+
+By `OnClick` Side-fixed dashboard
 
 ## Credits
 
 -YouTube _Arjun Khara_
 
     -Div-Pointer
+
+-YouTube _Dev Ed_
+
+    -Page-Transition-Effect
 
 -YouTube _WesBos_
 

@@ -9,6 +9,27 @@ body {
   transition: background-color 0.5s ease;
 }
 
+#first {
+  color: #fff;
+}
+
+nav {
+  margin-top: 3rem;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 2rem;
+  list-style:  none;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
 header {
   height: 100vh;
   display: flex;
@@ -23,6 +44,10 @@ header {
 
 .intro-text p {
   font-size: 2rem;
+}
+
+.index {
+  margin-top: 1rem;
 }
 
 section {

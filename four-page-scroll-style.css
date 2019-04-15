@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif, serif;
+}
+
+#second {
+  color: #fff;
+}
+
+nav {
+  margin-top: 3rem;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 2rem;
+  list-style:  none;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header,
+section,
+footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.page1,
+.page2,
+.page3,
+.page4, {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

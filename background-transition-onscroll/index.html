@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Background Transition On-Scroll</title>
-  </head>
-  <body>
-    <header>
-      <div class="intro-text">
-        <h1>Welcome</h1>
-        <p>Preview the background transition on-scroll</p>
-      </div>
-    </header>
 
-    <section>
-      <div class="page1">
-        <h1>White Background</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, est.</p>
-      </div>
-        <img src="green-clips.svg" alt="green clips">
-    </section>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Background Transition On-Scroll</title>
+</head>
+
+<body>
+  <nav>
+    <li>
+      <ul><a href="#" id="first">2 Page Scroll</a></ul>
+    </li>
+    <li>
+      <ul><a href="four-page-scroll.html" id="second">4 Page Scroll</a></ul>
+    </li>
+  </nav>
+
+  <header>
+    <div class="intro-text">
+      <h1>Welcome</h1>
+      <p>Preview the background transition on-scroll</p>
+      <p class="index">(page 1)</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="page1">
+      <h1>White Background</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, est.</p>
+    </div>
+    <img src="green-clips.svg" alt="green clips">
+    <p class="index">(page 2)</p>
+  </section>
 
 
-    <script type="text/javascript">
+  <script type="text/javascript">
     function bgChanger() {
       if (this.scrollY > this.innerHeight / 1.5) {
         document.body.classList.add("bg-active");
@@ -32,6 +45,7 @@
     }
 
     window.addEventListener("scroll", bgChanger);
-    </script>
-    </body>
+  </script>
+</body>
+
 </html>
