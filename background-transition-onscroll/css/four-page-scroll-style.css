@@ -5,6 +5,7 @@
 
 body {
   font-family: sans-serif, serif;
+  background-color: salmon;
 }
 
 #second {
@@ -38,11 +39,11 @@ footer {
   text-align: center
 }
 
-.page1,
+/* .page1,
 .page2,
 .page3,
 .page4, {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
