@@ -6,6 +6,7 @@
 body {
   font-family: sans-serif, serif;
   background-color: salmon;
+  transition: background-color 0.5s ease;  /* Applies to all background page transition */
 }
 
 #second {
@@ -39,11 +40,14 @@ footer {
   text-align: center
 }
 
-/* .page1,
-.page2,
-.page3,
-.page4, {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.bg-active1 {
+  background-color: #80cec6;
+}
+
+.bg-active2 {
+  background-color: #58d876;
+}
+
+.bg-active3 {
+  background-color: #c189d3;
+}

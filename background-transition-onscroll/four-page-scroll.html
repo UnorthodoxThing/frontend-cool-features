@@ -46,6 +46,30 @@
     </div>
   </footer>
 
+  <script type="text/javascript">
+    function bgChanger() {
+      const heightOfPage = document.documentElement.scrollHeight;
+      if (this.scrollY > heightOfPage / 4) { // (1/4) for First page
+        document.body.classList.add("bg-active1");
+      } else {
+        document.body.classList.remove("bg-active1");
+      }
+
+      if (this.scrollY > heightOfPage / 2) { // (1/2) for Half way of page
+        document.body.classList.add("bg-active2");
+      } else {
+        document.body.classList.remove("bg-active2");
+      }
+
+      if (this.scrollY > heightOfPage / 1.5) { // I'm not sure why this is '1.5' for the last page
+        document.body.classList.add("bg-active3");
+      } else {
+        document.body.classList.remove("bg-active3");
+      }
+    }
+
+    window.addEventListener("scroll", bgChanger);
+  </script>
 </body>
 
 </html>
