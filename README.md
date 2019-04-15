@@ -5,8 +5,8 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 ### Table Of Contents
 
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
-* [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Div-Pointer](#Div-Pointer)
+* [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
 
 ## Div-Pointer
@@ -27,7 +27,7 @@ NB: No JavaScript
 
 ## Page-Transition-Effect
 
-On scroll have a background transition effect. See 'Background-onScroll' repository.
+On scroll have a background transition effect. See "background-transition-onscroll" repository.
 
 By `Scroll`
 
@@ -49,7 +49,7 @@ By `OnClick` Side-fixed dashboard
 
     -Div-Pointer
 
--YouTube _Dev Ed_
+-YouTube _Dev Ed_, YouTube _dcode_
 
     -Page-Transition-Effect
 
