@@ -5,10 +5,6 @@
 
 
 .wrapper {
-  /* max-width: 960px;
-  border: thin red solid;
-  margin: 0 auto;
-  padding: 20px; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,9 +14,7 @@
 .gallery {
   display: flex;
   justify-content: center;
-  /* border: thin black solid; */
   margin: 0 auto;
-  /* background: skyblue; */
 }
 
 .gallery img {
@@ -78,48 +72,3 @@ margin: 0 auto;
     opacity:1;
   }
 }
-
-/* img {
-  width: 100%;
-  height: 60%;
-} */
-
-/* .gallery img { */
-  /* position: absolute; */
-  /* animation-name: fadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 2;
-  animation-direction: alternate;
-}
-
-.gallery img:nth-of-type(1) {
-  animation-delay: 4s;
-}
-
-.gallery img:nth-of-type(2) {
-  animation-delay: 2s;
-}
-
-.gallery img:nth-of-type(3) {
-  animation-delay: 0s;
-} */
-
-/* All the cross fade aimation happens here! */
-/* Total animation-duration
-t = (a + b) * n
-a = 2, b = 1, n = 3
-t = 9
-
-0% =>
-a/t*100% => 22.22%
-(a+b)/t*100% = 1/n*100% => 33.33%
-100%-(b/t*100%) =>
-100%
-
-@keyframes fade {
-  0% {opacity: 1;}
-  33.33% {opacity: 0.5;}
-  66.66% {opacity: 0;}
-  100% {opacity: 1;}
-} */
