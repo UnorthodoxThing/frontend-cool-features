@@ -6,6 +6,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
 * [Div-Pointer](#Div-Pointer)
+* [Landing-Page-01](#Landing-Page-01)
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
 
@@ -19,11 +20,7 @@ Play with the settings of an image's border colour, blur and spacing.
 
 ## Picture-Cross-Fade
 
-Get a gallery that cross-fade with specified time.
-
-YT _Roberto Matthews_ - [Smooth CSS Cross-Fade with no JavaScript](https://youtu.be/Y0RCPt5HpT8)
-
-NB: No JavaScript
+In a timely manner, the images will rotate with a fade animation.
 
 ## Page-Transition-Effect
 
@@ -52,6 +49,10 @@ By `OnClick` Side-fixed dashboard
 -YouTube _Dev Ed_, YouTube _dcode_
 
     -Page-Transition-Effect
+
+-YouTube _Roberto Matthews_, YouTube _CodeKnight_, CodePen _Dudley Storey_, website _CSS3 = Awesome_
+
+    -Picture-Cross-Fade
 
 -YouTube _WesBos_
 
