@@ -55,66 +55,6 @@ margin: 0 auto;
 }
 
 @keyframes fadeInOut {
-  /* 0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  } */
-  /* 0% {
-    opacity: 0;
-  }
-  9.52% {
-    opacity: 0;
-  }
-  33.32% {
-    opacity: 1;
-  }
-  42.84% {
-    opacity: 1;
-  }
-  66.64% {
-    opacity: 0;
-  }
-  58.33% {
-    opacity: 0;
-  }
-  76.16% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  } */
-
-/* 0% {
-  opacity: 0;
-  visibility: hidden;
-
-}
-14.29% {
-  opacity: 1;
-  visibility: visible;
-
-}
-71.43% {
-  opacity: 1;
-  visibility: visible;
-
-}
-100% {
-  opacity: 0;
-  visibility: hidden;
-
-} */
 0% {
   opacity: 0;
   visibility: hidden;
