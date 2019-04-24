@@ -12,7 +12,7 @@ All images should be of equal width and height. Otherwise, there might be some z
 
 ## Via JavaScript looping images through an array
 
-...
+N/A
 
 ## Algorithm for cross-fade animation :mag:
 
@@ -32,19 +32,28 @@ However, for initiating a pause in the animation there's a formula we can follow
 
 ## How long should the animation be?
 `animation-duration` = (fade-in + visible) x images
+
 e.g. fade-in = 1s, visible = 4s, images = 3
+
 animation-duration = (1 + 4) * 3
+
 animation-duration = 15s
 
 
 ## How long should the next image(s) be delayed for?
 `animation-delay` = (fade-in + visible) x (ordinal position - 1)
+
 e.g.
 animation-delay = (1 + 4) * (1-1) [first image]
+
 animation-delay = 0s
+
 animation-delay = (1 + 4) * (2-1) [second image]
+
 animation-delay = 5s
+
 animation-delay = (1 + 4) * (3-1) [third image]
+
 animation-delay = 10s
 
 ## Math the Keyframes' Percentage
