@@ -14,7 +14,7 @@ All images should be of equal width and height. Otherwise, there might be some z
 
 ...
 
-## Algorithm for animation-delay
+## Algorithm for animation-delay :mag:
 
 For "n" images You must define:
 a=presentation time for one image
@@ -34,6 +34,26 @@ Percentage for keyframes:
 
 NB: The "percentage for keyframes" aren't really necessary (I also have no clue how it works). Keep it the same, but the others are adjustable. The `animation-duration` will influence how fast the images rotate and for the `animation-delay` use `t/n` formula to equally divide the time each image are on display.
 
+## A guide on how to ...
+
+### Find the total time of the animation
+
+  total time = (animation time + animation pause) * number of iteration
+
+e.g.
+total time = (15s + 5s) * 3
+total time = 60s
+
+### Calculate the percentage (%) of the animation Keyframes
+
+  animation time(%) = (animation / total time) * 100`
+
+  animation pause(%) = animation pause / total time) * 100
+
+
+
 ## Credits
 
-[Demo with multiple images](http://css3.bradshawenterprises.com/cfimg/#cfimg3)
+-[Demo with multiple images](http://css3.bradshawenterprises.com/cfimg/#cfimg3)
+
+-[CSS Keyframe animation with pause between keyframes](https://codeburst.io/css-keyframe-animation-with-pause-between-keyframes-50a3b3d14354)
