@@ -36,7 +36,8 @@ width: 450px;
 margin: 0 auto;
 }
 
-/* animation-name | animation-timing-function | animation-iteration-count | animation-duration */
+/* animation shorthand
+animation-name | animation-timing-function | animation-iteration-count | animation-duration */
 #crossfade img {
   animation: fadeInOut ease-in-out infinite 15s;
   visibility: hidden;
