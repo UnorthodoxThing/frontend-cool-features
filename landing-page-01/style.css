@@ -84,7 +84,6 @@ section p {
 }
 
 /* section images */
-
 section#home {
   background: url('img/graffiti-berlin-wall-wall-trabi.svg') no-repeat center;
   /* To stretch the image and make the same effect as 'cover':
@@ -96,13 +95,16 @@ section#home {
 }
 
 section#about {
-  background: url('') no-repeat center center cover;
+  background: url('img/pink-gun.svg') no-repeat center;
+  background-size: 100% 100vw;
 }
 
 section#service {
-  background: url('') no-repeat center center cover;
+  background: url('img/red-alien-invader.svg') no-repeat center;
+  background-size: 100% 100vw;
 }
 
 section#contact {
-  background: url('') no-repeat center center cover;
+  background: url('img/blue-candy.svg') no-repeat center;
+  background-size: 100% 100vw;
 }
