@@ -1,10 +1,8 @@
 # Landing Page 01
 
-Simple landing page that snaps into place too.
+Simple landing page that snaps into place too. Snapping into place is available in only available in modern browsers. Otherwise, smooth scroll is possible with vanilla JavaScript.
 See for browser compatibility.
 "scroll-behaviour" is not available in Firefox, Chrome and Opera. Not available in Safari, Edge and IE. However, you may use JQuery (JS uses more codes) and a lightweight script called "Smooth Scroll".
-
-NB: No JavaScript
 
 # Keynotes
 
