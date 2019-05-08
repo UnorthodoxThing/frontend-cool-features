@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="style-with-js.css">
+  <link rel="stylesheet" href="style-without-animation.css">
   <title>Landing Page 01</title>
 </head>
 
@@ -13,10 +13,10 @@
   <div class="container">
     <nav class="navbar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="scroll" href="#home">Home</a></li>
+        <li><a class="scroll" href="#about">About</a></li>
+        <li><a class="scroll" href="#service">Service</a></li>
+        <li><a class="scroll" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section id="home">
@@ -41,31 +41,78 @@
     </section>
   </div>
 
-<script type="text/javascript">
-// Option 2 - Vanilla javascript Smooth scroll
+  <!-- Below is JQuery minified CDN -->
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+  <script type="text/javascript">
+    // Option 2 - Vanilla javascript Smooth scroll animation
 
-// get class
-// add event listener for 'click' and proceed with function
-// Check "hash" e.g. #home, #about, #service and #contact.
-// store hash in  a variable
-// call animate method
+    // Grab all the scroll class anchor elements, use whatever class you like
+    const scrollElems = document.querySelectorAll('.scroll');
+    // Now add an event listeners to those element
+    for (let i = 0; i < scrollElems.length; i++) {
+      const elem = scrollElems[i];
 
-let navbarLink = document.querySelector('.navbar a');
+      elem.addEventListener('click', function(e) {
+        e.preventDefault();
 
-navbarLink.addEventListener('click', function(e) {
-  if(this.hash !== '') {
-    const hash = this.hash;
+        // 1. Get the element id to which you want to scroll
+        const scrollElemId = e.target.href.split('#')[1];
 
-    let htmlElement = document.querySelector('html');
-    // target html and body element
-    // animate
-    // target scrollTop
-    // scrollTop: $(hash).offset().top
-    // at 800 ms (0.8 seconds)
-  }
-});
+        // 2. find that node from the document
+        const scrollEndElem = document.getElementById(scrollElemId);
 
-</script>
+        // 3. and well animate to that node..
+        const anim = requestAnimationFrame((timestamp) => {
+          const stamp = timestamp || new Date().getTime();
+          const duration = 1200;
+          const start = stamp;
+
+          const startScrollOffset = window.pageYOffset;
+          const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top;
+
+          scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        })
+      })
+    }
+
+    const easeInCubic = function(t) {
+      return t * t * t
+    }
+
+    const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startScrollOffset) => {
+      const runtime = currentTime - startTime;
+      let progress = runtime / duration;
+
+      progress = Math.min(progress, 1);
+
+      const ease = easeInCubic(progress);
+
+      window.scroll(0, startScrollOffset + (scrollEndElemTop * ease));
+      if (runtime < duration) {
+        requestAnimationFrame((timestamp) => {
+          const currentTime = timestamp || new Date().getTime();
+          scrollToElem(startTime, currentTime, duration, scrollEndElemTop, startScrollOffset);
+        })
+      }
+    }
+
+    // Option 3 - JQuery Smooth Scroll animation
+
+    // $('.navbar a').on('click', function(e) {
+    //   if(this.hash !== '') {
+    //     e.preventDefault();
+    //
+    //     const hash = this.hash;
+    //
+    //     $('html, body').animate(
+    //       {
+    //         scrollTop: $(hash).offset().top
+    //       },
+    //       800
+    //     )
+    //   }
+    // })
+  </script>
 </body>
 
 </html>
