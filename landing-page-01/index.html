@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style-with-js.css">
   <title>Landing Page 01</title>
 </head>
 
@@ -40,6 +41,31 @@
     </section>
   </div>
 
+<script type="text/javascript">
+// Option 2 - Vanilla javascript Smooth scroll
+
+// get class
+// add event listener for 'click' and proceed with function
+// Check "hash" e.g. #home, #about, #service and #contact.
+// store hash in  a variable
+// call animate method
+
+let navbarLink = document.querySelector('.navbar a');
+
+navbarLink.addEventListener('click', function(e) {
+  if(this.hash !== '') {
+    const hash = this.hash;
+
+    let htmlElement = document.querySelector('html');
+    // target html and body element
+    // animate
+    // target scrollTop
+    // scrollTop: $(hash).offset().top
+    // at 800 ms (0.8 seconds)
+  }
+});
+
+</script>
 </body>
 
 </html>
