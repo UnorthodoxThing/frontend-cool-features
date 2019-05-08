@@ -16,6 +16,8 @@ NB: No JavaScript
 
 Not cross-browser compatible (e.g. Opera does not have this feature).
 
+`Element.scrollTop` - The property gets or sets the number of pixels that an element's content is scrolled vertically.
+
 ### Discontinued CSS Property
 
 `scroll-snap-points-y` - Defines the vertical positioning of snap points within the content of the scroll container they are applied to. It is similar to `scroll-snap-align`.
@@ -23,3 +25,5 @@ Not cross-browser compatible (e.g. Opera does not have this feature).
 ## Credits
 
 Youtube _Traversy Media_ [Landing Page With Smooth Scroll - 3 options](https://youtu.be/y9nlfqT4s9s)
+
+[Page Scrolling In Vanilla JavaScript](https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/)
