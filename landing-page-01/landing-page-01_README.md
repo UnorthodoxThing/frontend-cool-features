@@ -10,9 +10,9 @@ NB: No JavaScript
 
 `scroll-behavior: smooth` - Allows the smooth transition or jump from sections of the page.
 
-`scroll-snap-type: y mandatory` - Target the vertical axis scroll feature and imperative
+`scroll-snap-type: y mandatory` - Target the vertical axis scroll feature and imperative. This makes for a more consistent user experience. Beware of a scrolling container taller than the viewport. `mandatory` value will always snape either to the top of the element or the top of the one below, making the middle part of the tall element impossible to scroll to. solution => always make container (targeted page) 100vh size.
 
-`scroll-snap-align: center` - Where the property is placed, it centers on that element
+`scroll-snap-align: center` - Where the property is placed, it centers on that element.
 
 Not cross-browser compatible (e.g. Opera does not have this feature).
 
