@@ -30,7 +30,7 @@ By `Scroll`
 
 ## Landing-Page-01
 
-Smooth scroll with your navbar
+Smooth scroll with your navbar.
 
 By `OnClick` Above-fixed dashboard
 
