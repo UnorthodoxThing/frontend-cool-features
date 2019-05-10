@@ -45,15 +45,16 @@ Get starting position `windows.pageYOffset` (which is relative to the window, no
 
 `window.requestAnimationFrame()` with the aid of the browser, it helps make your animation very nice and smooth.
 
+(unfinished)
 
 ## Credits
 
-Youtube _Traversy Media_ [Landing Page With Smooth Scroll - 3 options](https://youtu.be/y9nlfqT4s9s)
+-Youtube _Traversy Media_ [Landing Page With Smooth Scroll - 3 options](https://youtu.be/y9nlfqT4s9s)
 
-[Page Scrolling In Vanilla JavaScript](https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/)
+-[Page Scrolling In Vanilla JavaScript](https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/)
 
-[Smooth Scroll With Vanilla JavaScript](https://medium.com/@gurjitmehta/smooth-scroll-with-javascript-571283e9a3cd)
+-[Smooth Scroll With Vanilla JavaScript](https://medium.com/@gurjitmehta/smooth-scroll-with-javascript-571283e9a3cd)
 
-[How to Implement Smooth Scrolling in Vanilla JavaScript](https://www.sitepoint.com/smooth-scrolling-vanilla-javascript/)
+-[How to Implement Smooth Scrolling in Vanilla JavaScript](https://www.sitepoint.com/smooth-scrolling-vanilla-javascript/)
 
-Youtube _Dev Ed_ [Vanilla Javascript Smooth Scroll Tutorial](https://youtu.be/oUSvlrDTLi4)
+-Youtube _Dev Ed_ [Vanilla Javascript Smooth Scroll Tutorial](https://youtu.be/oUSvlrDTLi4)
