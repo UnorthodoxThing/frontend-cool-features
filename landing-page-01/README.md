@@ -1,22 +1,23 @@
 # Landing Page 01
 
-Simple landing page that snaps into place too. Snapping into place is available in only available in modern browsers. Otherwise, smooth scroll is possible with vanilla JavaScript.
+Simple landing page that also snaps into place. The "snapping into place" feature is only available in modern browsers. Otherwise, smooth scroll effect is possible with vanilla JavaScript.
 See for browser compatibility.
-"scroll-behaviour" is not available in Firefox, Chrome and Opera. Not available in Safari, Edge and IE. However, you may use JQuery (JS uses more codes) and a lightweight script called "Smooth Scroll".
+"scroll-behaviour" is available in Firefox, Chrome and Opera. Not available in Safari, Edge and IE... yet. However, you may use JQuery and a lightweight script called "Smooth Scroll" to give the same "smooth scroll" effect. I used vanilla JavaScript, which is 20x more efficient (and faster).
 
 # Keynotes
 
 ## CSS Smooth Scroll Behaviour
 
-`scroll-behavior: smooth` - Allows the smooth transition or jump from sections of the page.
+-`scroll-behavior: smooth` - Allows the smooth transition or jump from sections of the page.
 
-`scroll-snap-type: y mandatory` - Target the vertical axis scroll feature and imperative. This makes for a more consistent user experience. Beware of a scrolling container taller than the viewport. `mandatory` value will always snape either to the top of the element or the top of the one below, making the middle part of the tall element impossible to scroll to. solution => always make container (targeted page) 100vh size.
+-`scroll-snap-type: y mandatory` - Target the vertical axis scroll feature and imperative. This makes for a more consistent user experience. Beware of a scrolling container taller than the viewport. `mandatory` value will always snape either to the top of the element or the top of the one below, making the middle part of the tall element impossible to scroll to.
+_Solution_ => always make container (targeted page) 100vh size.
 
-`scroll-snap-align: center` - Where the property is placed, it centers on that element.
+-`scroll-snap-align: center` - Where part of the container should the view snap back to. The value `center` centers on that container element.
 
 Not cross-browser compatible (e.g. Opera does not have this feature).
 
-`Element.scrollTop` - The property gets or sets the number of pixels that an element's content is scrolled vertically.
+-`Element.scrollTop` - The property gets or sets the number of pixels that an element's content is scrolled vertically.
 
 ### Discontinued CSS Property
 
