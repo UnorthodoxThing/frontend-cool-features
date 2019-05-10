@@ -63,4 +63,4 @@ By `OnClick` Side-fixed dashboard
     -Landing-Page-01
 ## License
 
-[MIT License]()
+[MIT License](https://github.com/UnorthodoxThing/frontend-cool-features/blob/master/License)
