@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  /* transform: translateY(-50%); */
+}
