@@ -24,9 +24,9 @@ ul li {
 ul li a {
   display: block;
   text-decoration: none;
-  height: 30px;
-  line-height: 30px;
-  font-size: 24px;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 1.5rem;
   background: #fff;
   width: 140px;
   color: #262626;
@@ -41,12 +41,13 @@ ul li a:hover {
   background: #262626;
   color: #fff;
   scroll-behavior: smooth;
-  overflow-y: scroll;
 }
 
 #container {
   width: 100%;
   height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 #container div {

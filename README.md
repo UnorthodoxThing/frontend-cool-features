@@ -7,6 +7,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
 * [Div-Pointer](#Div-Pointer)
 * [Landing-Page-01](#Landing-Page-01)
+* [Scrolling-Animations-01](#Scrolling-Animations-01)
 * [Side-Navbar-w-Smooth-Scroll](#Side-Navbar-w-Smooth-Scroll)
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
@@ -34,6 +35,10 @@ By `Scroll`
 Smooth scroll with your navbar.
 
 By `OnClick` Above-fixed dashboard
+
+## Scrolling-Animations-01
+
+YT _Thomas Bradley_ [Javascript + jQuery effects: scrolling animations](https://youtu.be/nhHqiGCG10E)
 
 ## Side-Navbar-w-Smooth-Scroll
 
