@@ -48,23 +48,23 @@ By `OnClick` Side-fixed dashboard
 
 ## Credits
 
--YouTube _Arjun Khara_
+-_Arjun Khara_ (YouTube)
 
--YouTube _Dev Ed_
+-_Dev Ed_ (YouTube)
 
--YouTube _dcode_
+-_dcode_ (YouTube)
 
--YouTube _Roberto Matthews_
+-_Roberto Matthews_ (YouTube)
 
--YouTube _CodeKnight_
+-_CodeKnight_ (YouTube)
 
--CodePen _Dudley Storey_
+-_Dudley Storey_ (YouTube)
 
--website _CSS3 = Awesome_
+-_CSS3 = Awesome_ (YouTube)
 
--YouTube _WesBos_
+-_WesBos_ (YouTube)
 
--YouTube _Traversy Media_
+-_Traversy Media_ (YouTube)
 
 ## License
 
