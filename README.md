@@ -42,7 +42,7 @@ YT _Thomas Bradley_ [Javascript + jQuery effects: scrolling animations](https://
 
 ## Side-Navbar-w-Smooth-Scroll
 
-YT _Online Tutorials_ - [Pure CSS3 Smooth Scrolling To A DIV OnClick - No Javascript - Pure Html5 and CSS3 Tutorial](https://youtu.be/KbMJPNXYYnw) (/)
+A navbar fixed to the side of the screen that smoothly scrolls into the target tab.
 
 By `OnClick` Side-fixed dashboard
 
@@ -50,23 +50,22 @@ By `OnClick` Side-fixed dashboard
 
 -YouTube _Arjun Khara_
 
-    -Div-Pointer
+-YouTube _Dev Ed_
 
--YouTube _Dev Ed_, YouTube _dcode_
+-YouTube _dcode_
 
-    -Page-Transition-Effect
+-YouTube _Roberto Matthews_
 
--YouTube _Roberto Matthews_, YouTube _CodeKnight_, CodePen _Dudley Storey_, website _CSS3 = Awesome_
+-YouTube _CodeKnight_
 
-    -Picture-Cross-Fade
+-CodePen _Dudley Storey_
+
+-website _CSS3 = Awesome_
 
 -YouTube _WesBos_
 
-    -Adjusting Image Border Colour, Blur and Spacing with CSS Variables
-
 -YouTube _Traversy Media_
 
-    -Landing-Page-01
 ## License
 
 [MIT License](https://github.com/UnorthodoxThing/frontend-cool-features/blob/master/License)
