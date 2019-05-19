@@ -4,9 +4,9 @@ Simple landing page that also snaps into place. The "snapping into place" featur
 See for browser compatibility.
 "scroll-behaviour" is available in Firefox, Chrome and Opera. Not available in Safari, Edge and IE... yet. However, you may use JQuery and a lightweight script called "Smooth Scroll" to give the same "smooth scroll" effect. I used vanilla JavaScript, which is 20x more efficient (and faster).
 
-# Keynotes
+## Keynotes
 
-## CSS Smooth Scroll Behaviour
+### CSS Smooth Scroll Behaviour
 
 -`scroll-behavior: smooth` - Allows the smooth transition or jump from sections of the page.
 
@@ -23,7 +23,7 @@ Not cross-browser compatible (e.g. Opera does not have this feature).
 
 `scroll-snap-points-y` - Defines the vertical positioning of snap points within the content of the scroll container they are applied to. It is similar to `scroll-snap-align`.
 
-## Vanilla JavaScript Smooth Scroll
+### Vanilla JavaScript Smooth Scroll
 
 Prerequisite:
 
@@ -35,7 +35,7 @@ Prerequisite:
 
 -`Element.getBoundingClientRect`
 
-### Implementing the Smooth Scroll
+#### Implementing the Smooth Scroll
 
 Grab our anchor tags and apply a _click event listener_ in which we stop/prevent it's default behaviour and put some custom behaviour of our own.
 
@@ -58,3 +58,5 @@ Get starting position `windows.pageYOffset` (which is relative to the window, no
 -[How to Implement Smooth Scrolling in Vanilla JavaScript](https://www.sitepoint.com/smooth-scrolling-vanilla-javascript/)
 
 -Youtube _Dev Ed_ [Vanilla Javascript Smooth Scroll Tutorial](https://youtu.be/oUSvlrDTLi4)
+
+-Youtube _Coding Journey_ [Smooth Scroll with JavaScript](https://youtu.be/hPT1SSHptWA)
