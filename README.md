@@ -2,7 +2,7 @@
 
 A variety of frontend features developed through my learning of HTML5/CSS3 and JavaScript for Web Development.
 
-### Table Of Contents
+## Table Of Contents
 
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
 * [Div-Pointer](#Div-Pointer)
@@ -11,40 +11,47 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Side-Navbar-w-Smooth-Scroll](#Side-Navbar-w-Smooth-Scroll)
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
+* [Text-Animation-Glowing](#Text-Animation-Glowing)
 
-## Div-Pointer
+### Div-Pointer
 
 A comment div with a pointer, like a speech bubble.
 
-## Adjustable-Image-Settings
+### Adjustable-Image-Settings
 
 Play with the settings of an image's border colour, blur and spacing.
 
-## Picture-Cross-Fade
+### Picture-Cross-Fade
 
 In a timely manner, the images will rotate with a fade animation.
 
-## Page-Transition-Effect
+### Page-Transition-Effect
 
 On scroll have a background transition effect. See "background-transition-onscroll" repository.
 
 By `Scroll`
 
-## Landing-Page-01
+### Landing-Page-01
 
 Smooth scroll with your navbar.
 
 By `OnClick` Above-fixed dashboard
 
-## Scrolling-Animations-01
+### Scrolling-Animations-01
 
 YT _Thomas Bradley_ [Javascript + jQuery effects: scrolling animations](https://youtu.be/nhHqiGCG10E)
 
-## Side-Navbar-w-Smooth-Scroll
+### Side-Navbar-w-Smooth-Scroll
 
 A navbar fixed to the side of the screen that smoothly scrolls into the target tab.
 
 By `OnClick` Side-fixed dashboard
+
+### Text-Animation-Glowing
+
+Each letter of the word is light up while iterated in repeat.
+
+_Online Tutorials_ [Glowing Text Animation Effects 2](https://youtu.be/1B3FgFXn274)
 
 ## Credits
 
