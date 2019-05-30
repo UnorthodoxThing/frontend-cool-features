@@ -11,7 +11,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Side-Navbar-w-Smooth-Scroll](#Side-Navbar-w-Smooth-Scroll)
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
-* [Text-Animation-Glowing](#Text-Animation-Glowing)
+* [Text-Effects-Glowing-Neon-Light](#Text-Effects-Glowing-Neon-Light)
 
 ### Div-Pointer
 
@@ -47,11 +47,11 @@ A navbar fixed to the side of the screen that smoothly scrolls into the target t
 
 By `OnClick` Side-fixed dashboard
 
-### Text-Animation-Glowing
+### Text-Effects-Glowing-Neon-Light
 
-Each letter of the word is light up while iterated in repeat.
+1) A glowing neon light text effect.
 
-_Online Tutorials_ [Glowing Text Animation Effects 2](https://youtu.be/1B3FgFXn274)
+2) Each letter of the word is light up while iterated in repeat.
 
 ## Credits
 
