@@ -12,6 +12,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
 * [Text-Effects-Glowing-Neon-Light](#Text-Effects-Glowing-Neon-Light)
+* [Loaders](#Loaders)
 
 ### Div-Pointer
 
@@ -52,6 +53,10 @@ By `OnClick` Side-fixed dashboard
 1) A glowing neon light text effect.
 
 2) Each letter of the word is light up while iterated in repeat.
+
+### Loaders
+
+[Quick & Easy CSS Loaders](https://youtu.be/BwhTKJFpKSw)
 
 ## Credits
 
