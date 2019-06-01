@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* Add a dark theme background url */
+  background-image: url("img/img1.svg");
+  background-size: cover;
+  /* Add neon-like font-family */
+}
+
+.neon {
+  /* Center image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
