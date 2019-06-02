@@ -2,6 +2,8 @@
 
 A glowing, neon light text effect.
 
+![neon light1](https://user-images.githubusercontent.com/24542308/58760060-7067d980-8576-11e9-945f-de673352677c.png)
+
 ## Keynotes
 
 _svg_ image extensions will not be on display by CSS background-image UNLESS given a dimension width and height. Otherwise, the browser uses the size that's specified in the _svg_ itself, similar to how it treats an ordinary image. e.g. If your container is 100px tall, but your _svg_ is 200px, only half of it will show. Use the `background-size` property to resize it.
