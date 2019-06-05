@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif, monospace;
+}
+
+.container-bg {
+  background: #000;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h1,
+p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  filter: blur(1px);
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 6rem;
+  text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 160px #fff;
+}
+
+p {
+  width: 55%;
+  font-size: 1.6rem;
+  filter: blur(0.6px);
+  text-transform: initial;
+  /* i.e. does not inherit parent or compound from */
+  text-shadow: 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 8px #fff,
+    0 0 16px #fff;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00adff;
+  z-index: 1;
+  mix-blend-mode: color;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
