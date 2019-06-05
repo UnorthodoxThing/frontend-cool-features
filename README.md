@@ -11,6 +11,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Side-Navbar-w-Smooth-Scroll](#Side-Navbar-w-Smooth-Scroll)
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
+* [Search-Box](#Search-Box)
 * [Text-Effects-Glowing-Neon-Light](#Text-Effects-Glowing-Neon-Light)
 * [Loaders](#Loaders)
 
@@ -47,6 +48,10 @@ YT _Thomas Bradley_ [Javascript + jQuery effects: scrolling animations](https://
 A navbar fixed to the side of the screen that smoothly scrolls into the target tab.
 
 By `OnClick` Side-fixed dashboard
+
+### Search-Box
+
+ [Awesome CSS Search Box Using Only HTML & CSS](https://youtu.be/v1PeTDrw6OY)
 
 ### Text-Effects-Glowing-Neon-Light
 
