@@ -49,8 +49,8 @@ p {
   width: 55%;
   font-size: 1.6rem;
   filter: blur(0.6px);
-  text-transform: initial;
   /* i.e. does not inherit parent or compound from */
+  text-transform: initial;
   text-shadow: 0 0 1px #fff,
     0 0 2px #fff,
     0 0 4px #fff,
