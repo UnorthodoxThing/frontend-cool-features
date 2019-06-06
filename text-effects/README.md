@@ -11,8 +11,8 @@
 
 A classic light up text.
 
-Lists of Acceptable neon-light font-family:
--_Poppins_
+#### Lists of Acceptable neon-light font-family:
+- _Poppins_
 -
 -
 
@@ -23,3 +23,5 @@ Lists of Acceptable neon-light font-family:
 A glowing text that changes colour.
 
 ## Credits
+
+- _Traverys Media_ (Youtube) - [CSS Text Background Animation](https://youtu.be/lX5LZTWc4f8)
