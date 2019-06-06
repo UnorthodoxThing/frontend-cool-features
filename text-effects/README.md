@@ -9,14 +9,20 @@
 
 #### "Glowing Neon Light"
 
-A classic light up text.
+A classic light up textveffect.
+
+Recommended for headings.
 
 #### Lists of Acceptable neon-light font-family:
 - _Poppins_
 -
 -
 
-### text-effects-01
+### text-effects-02
+
+A light up text effect that rotates through the color spectrum.
+
+Recommended for headings, and paragraphs.
 
 #### "Glowing Neon Light - Hue Rotation" (with Animation)
 
