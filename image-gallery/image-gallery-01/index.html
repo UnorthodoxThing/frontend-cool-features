@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Flex Gallery</title>
-  </head>
-  <body>
-    <!-- TODO:
-  Collect 5 images - possible large Contents
-  create and link CSS
-create and link JS if big. If small, don't bother -->
 
-<div class="panels">
-  <div class="panel panel1">
-    <p>Number1</p>
-    <p>Number2</p>
-    <p>Number3</p>
-  </div>
-  <div class="panel panel2">
-    <p>Number4</p>
-    <p>Number5</p>
-    <p>Number6</p>
-  </div>
-  <div class="panel panel3">
-    <p>Number7</p>
-    <p>Number8</p>
-    <p>Number9</p>
-  </div>
-  <div class="panel panel4">
-    <p>Number10</p>
-    <p>Number11</p>
-    <p>Number12</p>
-  </div>
-  <div class="panel panel5">
-    <p>Number13</p>
-    <p>Number14</p>
-    <p>Number15</p>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Flex Gallery</title>
+</head>
+
+<body>
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Number1</p>
+      <p>Number2</p>
+      <p>Number3</p>
+    </div>
+    <div class="panel panel2">
+      <p>Number4</p>
+      <p>Number5</p>
+      <p>Number6</p>
+    </div>
+    <div class="panel panel3">
+      <p>Number7</p>
+      <p>Number8</p>
+      <p>Number9</p>
+    </div>
+    <div class="panel panel4">
+      <p>Number10</p>
+      <p>Number11</p>
+      <p>Number12</p>
+    </div>
+    <div class="panel panel5">
+      <p>Number13</p>
+      <p>Number14</p>
+      <p>Number15</p>
+    </div>
+
   </div>
 
-</div>
+  <script type="text/javascript">
+    const panels = document.querySelectorAll('.panel');
 
-  </body>
+    function toggleOpen() {
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    // 'transitionend' NOT 'transitioned'
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+
+</body>
+
 </html>
