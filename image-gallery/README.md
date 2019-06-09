@@ -8,6 +8,8 @@
 
 #### "Flex Gallery"
 
+A Gallery of panels which stretch out when selected from a group of images and more text slides in.
+
 ## Credits
 
-- _Wes Bos_ (Youtube) - [Flexbox + JavaScript Image Gallery — #JavaScript30 5/30](https://youtu.be/9eif30i26jg)
+(Within the following folders.)
