@@ -6,6 +6,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
 * [Div-Pointer](#Div-Pointer)
+* [Image-Gallery](#Image-Gallery)
 * [Landing-Page-01](#Landing-Page-01)
 * [Scrolling-Animations-01](#Scrolling-Animations-01)
 * [Side-Navbar-w-Smooth-Scroll](#Side-Navbar-w-Smooth-Scroll)
@@ -15,13 +16,17 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Text-Effects-Glowing-Neon-Light](#Text-Effects-Glowing-Neon-Light)
 * [Loaders](#Loaders)
 
+### Adjustable-Image-Settings
+
+Play with the settings of an image's border colour, blur and spacing.
+
 ### Div-Pointer
 
 A comment div with a pointer, like a speech bubble.
 
-### Adjustable-Image-Settings
+### Image-Gallery
 
-Play with the settings of an image's border colour, blur and spacing.
+1) a flex gallery
 
 ### Picture-Cross-Fade
 
