@@ -43,7 +43,7 @@ body {
   animation-delay: 0.75s;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   to {
     transform: rotate(360deg);
   }
@@ -53,4 +53,4 @@ body {
   50% {
     transform: scale(1);
   }
-}
+} */

@@ -4,6 +4,8 @@ A range of loaders style.
 
 > All you need is some transition and animation.
 
+To check the loading animation, throttle your internet connection in the developer tools in your browsers. 
+
 ### Recommended:
 
 When creating a loading page, it's best to have a light and fast loading graphic.
@@ -30,6 +32,8 @@ When creating a loading page, it's best to have a light and fast loading graphic
 * [loaders-03](#loaders-03)
 
 ## loaders-01
+
+### "Interwind Loading Animation"
 
 ...
 
