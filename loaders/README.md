@@ -4,7 +4,7 @@ A range of loaders style.
 
 > All you need is some transition and animation.
 
-To check the loading animation, throttle your internet connection in the developer tools in your browsers. 
+To check the loading animation, throttle your internet connection in the developer tools in your browsers.
 
 ### Recommended:
 
@@ -50,6 +50,10 @@ When creating a loading page, it's best to have a light and fast loading graphic
 A tricolor circle loading animation with the text "Loading..." in the center. The content wriggles in animation.
 
 - _DarkCode_ (Youtube) - [Amazing Loading Animation Using Only HTML & CSS](https://youtu.be/QLiZ5VrhA98)
+
+## More Resources
+
+Find more loading GIFs at [GIPHY](https://giphy.com/explore/loading).
 
 ## Credits
 
