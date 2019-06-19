@@ -6,10 +6,10 @@ An animation that feature two circular objects resizing in circle motion.
 
 ### The HTML
 
-`<div class="loading-container">
-    <div class="circle"></div>
-    <div class="circle"></div>
-</div>`
+    `<div class="loading-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>`
 
 ### The CSS
 
