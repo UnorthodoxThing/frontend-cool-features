@@ -32,8 +32,6 @@ Basically we'll have two circles next to each other (hence the `display: inline-
 
 ### The animation
 
-+ The `.loading-container` has to have a higher `height` than its children elements. This way we can set the `transform-origin` property and rotate around the `bottom center` point of the `div`, creating a nice effect.
-
     .loading-container {
         animation: rotate 3s linear infinite;
         height: 50px;
@@ -47,9 +45,9 @@ Basically we'll have two circles next to each other (hence the `display: inline-
     }
 
     .circle {
-        /* The CSS from above */
+        /* The CSS from above
+        New CSS */*/
 
-        /* New CSS */
         animation: grow 1.5s linear infinite;
         transform: scale(0);
     }
@@ -64,9 +62,12 @@ Basically we'll have two circles next to each other (hence the `display: inline-
         }
     }
 
-`.circle`s are hidden by setting the `scale` property to `0`. The `keyframes` "grow" at 50% will scale it back to its initial size (i.e. it'll be setting it to `1`).
 
-On the 2nd circle we have an `animation-delay` property set. It will make the animation start after `0.75` seconds (which is half of the time it takes the animation to complete. This way while the first circle is growing, the other one is shrinking).  
++ The `.loading-container` has to have a higher `height` than its children elements. This way we can set the `transform-origin` property and rotate around the `bottom center` point of the `div`, creating a nice effect.
+
++ `.circle`s are hidden by setting the `scale` property to `0`. The `keyframes` "grow" at 50% will scale it back to its initial size (i.e. it'll be setting it to `1`).
+
++ On the 2nd circle we have an `animation-delay` property set. It will make the animation start after `0.75` seconds (which is half of the time it takes the animation to complete. This way while the first circle is growing, the other one is shrinking).  
 
 ## Credits
 
