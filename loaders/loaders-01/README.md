@@ -46,7 +46,7 @@ Basically we'll have two circles next to each other (hence the `display: inline-
 
     .circle {
         /* The CSS from above
-        New CSS */*/
+        New CSS \*/
 
         animation: grow 1.5s linear infinite;
         transform: scale(0);
