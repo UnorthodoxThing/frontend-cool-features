@@ -44,9 +44,17 @@ Smooth scroll with your navbar.
 
 By `OnClick` Above-fixed dashboard
 
-### Scrolling-Animations-01
+### Scrolling-Animations
+
+scrolling-animations-01:
 
 YT _Thomas Bradley_ [Javascript + jQuery effects: scrolling animations](https://youtu.be/nhHqiGCG10E)
+
+scrolling-animations-02: "Parrallax Scrolling Effects"
+
+- _Online Tutorials_ (Youtube) [Parallax Scrolling Effects | Html CSS & Javascript](https://youtu.be/I3gv-GRlYvs)
+
+- _Kevin Powell_ (Youtube) [How to change your navigation style on scroll](https://youtu.be/RxnV9Xcw914)
 
 ### Side-Navbar-w-Smooth-Scroll
 
