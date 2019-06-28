@@ -1,4 +1,8 @@
-# loaders-03: "Bouncing Animated Loader"
+# loaders-03: "Bouncing Loading Animation"
+
+## Keynotes
+
+`transform3d([x],[y],[z])`
 
 ## Credits
 
