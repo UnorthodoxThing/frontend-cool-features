@@ -4,7 +4,9 @@ A range of loaders style.
 
 > All you need is some transition and animation.
 
-To check the loading animation, throttle your internet connection in the developer tools in your browsers.
+To check the loading animation, throttle your internet connection in the developer tools located in your browser.
+
+Tab into 'network', and see throttling options. Reload page.
 
 ### Recommended:
 
@@ -39,9 +41,13 @@ When creating a loading page, it's best to have a light and fast loading graphic
 
 ## loaders-02
 
+### "Text Loading Animation"
+
 ...
 
 ## loaders-03
+
+### "Bouncing Loading Animation"
 
 ...
 
