@@ -1,5 +1,7 @@
 # loaders-02: "Text Loading Animation"
 
+The text "Loading...", where the elipses (...) build up, disappear one by one and resets again.
+
 ## Keynotes
 
 + Brought "..." (symbol) by _CSS (ISO)_. Use `\2026`.

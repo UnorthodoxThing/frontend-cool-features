@@ -1,5 +1,7 @@
 # loaders-03: "Bouncing Loading Animation"
 
+Three balls bouncing in order of a  straight line.
+
 ## Keynotes
 
 + Use `min-height: 100vh;` to center element(s).

@@ -27,6 +27,27 @@ When creating a loading page, it's best to have a light and fast loading graphic
 
 1-9 seconds. Minimum 1 second. Should be no more than 2 seconds. Users want doesn't want to know how bad the loading is looking at this alot.
 
+### Looking at the Loaders without throttling the Network
+
+Using JavaScript asynchronous method, we can look at the loaders briefly.
+
+`const loader = document.querSelector(.'loader');
+const main = document.querySelctor('.main');
+
+function init() {
+  setTimeout(() => {
+    loader.style.opactiy = 0;
+    loader.style.display = 'none';
+
+    main.style.display = 'block';
+    setTimeout(() => main.style.opactiy = 1, 50);
+    }, 4000);
+  }
+
+  init();`
+
+  where `main` is the context to bring forward after the page has loaded.
+
 ## Table of Contents
 
 * [loaders-01](#loaders-01)
@@ -37,19 +58,19 @@ When creating a loading page, it's best to have a light and fast loading graphic
 
 ### "Interwind Loading Animation"
 
-...
+Two balls rescaling in a circle loop.
 
 ## loaders-02
 
 ### "Text Loading Animation"
 
-...
+The text "Loading...", where the elipses (...) build up, disappear one by one and resets again.
 
 ## loaders-03
 
 ### "Bouncing Loading Animation"
 
-...
+Three balls bouncing in order of a  straight line.
 
 ## loaders-04
 
