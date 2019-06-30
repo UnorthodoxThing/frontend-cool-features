@@ -31,20 +31,20 @@ When creating a loading page, it's best to have a light and fast loading graphic
 
 Using JavaScript asynchronous method, we can look at the loaders briefly.
 
-`const loader = document.querSelector(.'loader');
-const main = document.querySelctor('.main');
+    const loader = document.querSelector(.'loader');
+    const main = document.querySelctor('.main');
 
-function init() {
-  setTimeout(() => {
-    loader.style.opactiy = 0;
-    loader.style.display = 'none';
+    function init() {
+      setTimeout(() => {
+        loader.style.opactiy = 0;
+        loader.style.display = 'none';
 
-    main.style.display = 'block';
-    setTimeout(() => main.style.opactiy = 1, 50);
-    }, 4000);
-  }
+        main.style.display = 'block';
+        setTimeout(() => main.style.opactiy = 1, 50);
+        }, 4000);
+      }
 
-  init();`
+      init();
 
   where `main` is the context to bring forward after the page has loaded.
 
