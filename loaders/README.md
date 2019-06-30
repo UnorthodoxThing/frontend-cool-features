@@ -53,6 +53,8 @@ Using JavaScript asynchronous method, we can look at the loaders briefly.
 * [loaders-01](#loaders-01)
 * [loaders-02](#loaders-02)
 * [loaders-03](#loaders-03)
+* [loaders-04](#loaders-04)
+* [loaders-05](#loaders-05)
 
 ## loaders-01
 
@@ -77,6 +79,18 @@ Three balls bouncing in order of a  straight line.
 A tricolor circle loading animation with the text "Loading..." in the center. The content wriggles in animation.
 
 - _DarkCode_ (Youtube) - [Amazing Loading Animation Using Only HTML & CSS](https://youtu.be/QLiZ5VrhA98)
+
+## loaders-05
+
+### "Gif Loading Animation"
+
+A simple _GIF_ file as your loading animation.
+
+- _dcode_ (Youtube) - [Create your own Page Pre-Loader (HTML, CSS & JS) (No-jQuery Needed)](https://youtu.be/xuA83OYTE7I)
+
+## loaders-06
+
+- _Florin Pop_ (Developer) - [Loading Animations](https://www.florin-pop.com/blog/2017/09/loading-animations)
 
 ## More Resources
 
