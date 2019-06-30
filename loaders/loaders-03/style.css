@@ -8,6 +8,7 @@ html {
 }
 
 .loader {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +20,8 @@ html {
   width: 0px;
   height: 0px;
   border-radius: 50%;
-  margin: 0 8px;
+  margin-left: 8px;
+  margin-right: 8px;
   transform: translate3d(0);
   animation: bounce 0.6s infinite alternate;
 }
