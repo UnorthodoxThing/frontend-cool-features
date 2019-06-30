@@ -2,7 +2,9 @@
 
 ## Keynotes
 
-`transform3d([x],[y],[z])`
++ Use `min-height: 100vh;` to center element(s).
+
++ Use `transform3d([x],[y],[z])` to create to and from animation effect.
 
 ## Credits
 
