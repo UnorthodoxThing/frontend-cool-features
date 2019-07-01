@@ -86,8 +86,6 @@ A tricolor circle loading animation with the text "Loading..." in the center. Th
 
 A simple _GIF_ file as your loading animation.
 
-- _dcode_ (Youtube) - [Create your own Page Pre-Loader (HTML, CSS & JS) (No-jQuery Needed)](https://youtu.be/xuA83OYTE7I)
-
 ## loaders-06
 
 - _Florin Pop_ (Developer) - [Loading Animations](https://www.florin-pop.com/blog/2017/09/loading-animations)
