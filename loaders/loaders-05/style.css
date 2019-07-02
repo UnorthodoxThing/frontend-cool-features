@@ -25,6 +25,7 @@ html {
   justify-content: center;
   align-items: center;
   /* Add background colour to match your gif here */
+  background: #fff;
 }
 
 .loader > img {
