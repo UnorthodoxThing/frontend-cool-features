@@ -2,6 +2,11 @@
 
 An animation that feature two circular objects resizing in circle motion.
 
+NB: The animation is too long and could not be shown fully unless we get a longer
+load time. Therefore, it should be demoted for short loading times.
+
+_Comment out_ the JavaScript in the 'index.html' to see the loading animation full.
+
 ## Keynotes
 
 ### The HTML
