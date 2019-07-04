@@ -7,13 +7,6 @@ html {
   font-size: 62.5%; /* = 10px */
 }
 
-.main {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .loader {
   position: fixed;
   z-index: 99;
@@ -42,4 +35,12 @@ html {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
