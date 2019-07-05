@@ -25,6 +25,7 @@ html {
   /* Adjust desired `width` here */
 }
 
+/* Loading effect */
 .loader.hidden {
   animation: fadeOut 1s;
   animation-fill-mode: forwards;
@@ -37,6 +38,7 @@ html {
   }
 }
 
+/* Boilerplate text */
 .main {
   min-height: 100vh;
   display: flex;
