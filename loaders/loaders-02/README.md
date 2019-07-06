@@ -2,6 +2,8 @@
 
 The text "Loading...", where the elipses (...) build up, disappear one by one and resets again.
 
+NB: As it takes time to load, if the text is imported or linked to the internet THAT will need to be loaded too to use it. i.e. you won't see the font-styled text until a bit later. 
+
 ## Keynotes
 
 + Brought "..." (symbol) by _CSS (ISO)_. Use `\2026`.
