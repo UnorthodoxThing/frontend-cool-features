@@ -74,7 +74,15 @@ By `OnClick` Side-fixed dashboard
 
 ### Loaders
 
-[Quick & Easy CSS Loaders](https://youtu.be/BwhTKJFpKSw)
+1) An animation that feature two circular objects resizing in circle motion.
+
+2) The text "Loading...", where the elipses (...) build up, disappear one by one and resets again.
+
+3) Three balls bouncing in order of a straight line.
+
+4)
+
+5) A simple _GIF_ file as your loading animation.
 
 ## Credits
 
