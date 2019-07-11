@@ -5,6 +5,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 ## Table Of Contents
 
 * [Adjusting Image Background Colour, Blur and Spacing with CSS Variables](#Adjustable-Image-Settings)
+* [Button-Effects](#Button-Effects)
 * [Div-Pointer](#Div-Pointer)
 * [Image-Gallery](#Image-Gallery)
 * [Landing-Page-01](#Landing-Page-01)
@@ -19,6 +20,10 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 ### Adjustable-Image-Settings
 
 Play with the settings of an image's border colour, blur and spacing.
+
+### Button-Effects
+
+- _DarkCode_ (Youtube) - [Animated gradient buttons on hover Using HTML & CSS](https://youtu.be/kwrgKJzsgGE)
 
 ### Div-Pointer
 

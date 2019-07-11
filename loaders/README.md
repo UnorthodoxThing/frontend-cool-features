@@ -78,8 +78,6 @@ Three balls bouncing in order of a  straight line.
 
 A tricolor circle loading animation with the text "Loading..." in the center. The content wriggles in animation.
 
-- _DarkCode_ (Youtube) - [Amazing Loading Animation Using Only HTML & CSS](https://youtu.be/QLiZ5VrhA98)
-
 ## loaders-05
 
 ### "Gif Loading Animation"
