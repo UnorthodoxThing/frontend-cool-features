@@ -8,6 +8,10 @@ To check the loading animation, throttle your internet connection in the develop
 
 Tab into 'network', and see throttling options. Reload page.
 
+What's the optimal size for a loading page? 200k.
+
+What if I'm using an image? Use PNG-8 where possible.
+
 ### Recommended:
 
 When creating a loading page, it's best to have a light and fast loading graphic.
@@ -93,6 +97,11 @@ A simple _GIF_ file as your loading animation.
 Find more loading GIFs at [GIPHY](https://giphy.com/explore/loading).
 
 ## Credits
+
+- _CSS-Tricks_ (website) - [What is the ideal page size for quick loading pages](https://css-tricks.com/what-is-the-ideal-page-size-for-quick-loading-pages/
+)
+
+- _CSS-Tricks_ (website) - [When to use jpg and when to use gif](https://css-tricks.com/when-to-use-jpg-and-when-to-use-gif/)
 
 - _Traversy Media_ (Youtube) -  [Quick & Easy CSS Loaders](https://youtu.be/BwhTKJFpKSw)
 

@@ -85,7 +85,7 @@ By `OnClick` Side-fixed dashboard
 
 3) Three balls bouncing in order of a straight line.
 
-4)
+4) A wheel of three colours spinning in circles and the text "loading" in the middle of it .
 
 5) A simple _GIF_ file as your loading animation.
 
