@@ -1,16 +1,23 @@
 # Loaders
 
-A range of loaders style.
+A range of stylized loading page.
 
 > All you need is some transition and animation.
 
-To check the loading animation, throttle your internet connection in the developer tools located in your browser.
+To check the loading animation, throttle your internet connection in the developer tools located in your browser, OR comment out the JS script in html file
+and the 'loading effect' and 'boilerplate text' in the CSS file(s).
 
 Tab into 'network', and see throttling options. Reload page.
 
-What's the optimal size for a loading page? 200k.
+### FAQ
 
-What if I'm using an image? Use PNG-8 where possible.
+#### What's the optimal size for a loading page?
+
+**A:** 200k.
+
+#### What if I'm using an image as a loading page?
+
+**A:** Use PNG-8 where possible.
 
 ### Recommended:
 
