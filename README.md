@@ -89,6 +89,8 @@ By `OnClick` Side-fixed dashboard
 
 5) A simple _GIF_ file as your loading animation.
 
+6)
+
 ## Credits
 
 -_Arjun Khara_ (YouTube)
