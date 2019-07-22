@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* = 10px */
+}
+
+.container {
+  /* Centers element */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  /* button size */
+  border: none;
+  margin: 20px;
+  padding: 24px;
+  width: 220px;
+  /* button styles */
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  /* animation happening from here */
+  background-size: 200%;
+  /* Giving it the size 200% allows it room to move in its own dimension
+    100% is the fixed fit i.e. it has to be at least 50% over */
+  transition: 0.6s;
+}
+
+/* syntax for linear-gradient(): [begin-animation], [color-1], [color-2], [color-1] */
+
+.btn1 {
+  background-image: linear-gradient(to left, #FFC312, #EE5A24, #FFC312);
+}
+
+.btn2 {
+  background-image: linear-gradient(to left, #C4E538, #009432, #C4E538);
+}
+
+.btn3 {
+  background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4 );
+}
+
+.btn4 {
+  background-image: linear-gradient(to left, #FDA7DF, #9980FA, #FDA7DF);
+}
+
+/* syntax for on-hover effect: [end-animation] */
+.btn:hover {
+  background-position: right;
+}
