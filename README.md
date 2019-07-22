@@ -23,7 +23,7 @@ Play with the settings of an image's border colour, blur and spacing.
 
 ### Button-Effects
 
-- _DarkCode_ (Youtube) - [Animated gradient buttons on hover Using HTML & CSS](https://youtu.be/kwrgKJzsgGE)
+1) Gradient effect on-hover
 
 ### Div-Pointer
 
