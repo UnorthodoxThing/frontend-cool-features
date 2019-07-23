@@ -6,7 +6,7 @@ Animated gradient buttons on hover.
 
 + The `linear-gradient()` CSS function creates an image consisting of a progressive transition between two or more colors along a straight line.
 
-+ `background-size: 200%;`
++ `background-size: 200%;`; will give the ability to zoom in current dimension. Must be at least `150%`. This enables zoom.
 
 + `/* syntax for linear-gradient(): [begin-animation], [color-1], [color-2], [color-1] */
 
