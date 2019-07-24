@@ -51,9 +51,7 @@ By `OnClick` Above-fixed dashboard
 
 ### Scrolling-Animations
 
-scrolling-animations-01:
-
-YT _Thomas Bradley_ [Javascript + jQuery effects: scrolling animations](https://youtu.be/nhHqiGCG10E)
+1) An image rotates on the Y-axis amount of scroll, be it, forward or backwards.
 
 scrolling-animations-02: "Parrallax Scrolling Effects"
 

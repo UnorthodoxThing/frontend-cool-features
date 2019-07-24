@@ -4,8 +4,10 @@ When you scroll down a long screen, an animation begins and stops with you; An a
 
 ## Keynotes
 
-...
++ `window.pageYOffset`
+
++ `[image].style.transform = `rotate(${scroll}deg)`;`
 
 ##Credits
 
-...
+- _Thomas Bradley_ (Youtube) - [Javascript + jQuery effects: scrolling animations](https://youtu.be/nhHqiGCG10E)
