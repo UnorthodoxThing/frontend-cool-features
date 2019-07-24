@@ -3,10 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Scrolling Image Animation</title>
+    <style media="screen">
+      html {
+        /* Sample height given */
+        height: 1200px;
+      }
+      img {
+        position: fixed;
+        /*
+        Centers the image. Probably relative to the entire html height given.
+        */
+        top: 25%;
+        left: 38%;
+      }
+    </style>
   </head>
   <body>
-    <img id="target-image" src="img/sun.png" alt="a sun">
 
-    <script src="" type="text/javascript"></script>
+    <img id="target-image" src="img/sun.png" alt="a sun" width="250" height="250">
+
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
