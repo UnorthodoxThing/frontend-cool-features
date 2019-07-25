@@ -55,8 +55,6 @@ By `OnClick` Above-fixed dashboard
 
 scrolling-animations-02: "Parrallax Scrolling Effects"
 
-- _Online Tutorials_ (Youtube) [Parallax Scrolling Effects | Html CSS & Javascript](https://youtu.be/I3gv-GRlYvs)
-
 - _Kevin Powell_ (Youtube) [How to change your navigation style on scroll](https://youtu.be/RxnV9Xcw914)
 
 ### Side-Navbar-w-Smooth-Scroll
