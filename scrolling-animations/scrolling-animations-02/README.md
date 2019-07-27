@@ -1,13 +1,27 @@
-# Scrolling-Animations: "Parrallax"
+# Scrolling-Animations: "Parrallax Scrolling Effect"
 
 ...
 
 >def. Parrallax (n.)
 the effect whereby the position or direction of an object appears to differ when viewed from different positions, e.g. through the viewfinder and the lens of a camera.
 
+Types of Parrallax
+
+- Fixed Background, Scrolling body
+
+- Slow Elements
+
+- Landing Elements
+
 ## Keynotes
 
-...
++ 3 Images needed.
+
+1) For the Background
+
+2) For the right side to slide to the right
+
+3) For the left side to slide to the left
 
 ## Credits
 
