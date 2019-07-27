@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>Parrallax Scrolling Effect</title>
-  </head>
-  <body>
-    <section class="zoom">
 
-    </section>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Parrallax Scrolling Effect</title>
+</head>
 
-  </body>
+<body>
+  <section class="zoom">
+    <img src="img/mountain1.png" alt="" id="layer1">
+    <img src="img/mountain2.png" alt="" id="layer2">
+    <img src="img/text.png" alt="" id="text">
+  </section>
+
+  <section class="content">
+    <h2>Lorem ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Qui voluptate mollitia rerum temporibus eveniet asperiores
+      ipsum, necessitatibus odit, accusamus ut, debitis quaerat
+      nulla et consequuntur doloribus provident accusantium dolorum
+      modi laboriosam, quis velit. Id, perspiciatis.</p>
+  </section>
+
+  <script type="text/javascript">
+    let layer1 = document.querySelector('#layer1');
+    let scroll = window.pageYOffset;
+
+    document.addEventListener('scroll', function(e) {
+      // console.log("scrolling!");
+      var offset = window.pageYOffset;
+      scroll = offset;
+      layer1.style.width = (100 + scroll/5) + '%';
+    });
+  </script>
+</body>
+
 </html>
