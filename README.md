@@ -53,7 +53,7 @@ By `OnClick` Above-fixed dashboard
 
 1) An image rotates on the Y-axis amount of scroll, be it, forward or backwards.
 
-scrolling-animations-02: "Parrallax Scrolling Effects"
+2) When scroll, the set up header image(s) will navigate itself away from the screen.
 
 - _Kevin Powell_ (Youtube) - [How to change your navigation style on scroll](https://youtu.be/RxnV9Xcw914)
 
