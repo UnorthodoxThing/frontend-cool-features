@@ -91,25 +91,25 @@ By `OnClick` Side-fixed dashboard
 
 ## Credits
 
--_Arjun Khara_ (YouTube)
+-_Arjun Khara_ (Youtube)
 
--_Dev Ed_ (YouTube)
+-_Dev Ed_ (Youtube)
 
--_dcode_ (YouTube)
+-_dcode_ (Youtube)
 
-- _DevTips_ (Youtube)
+-_DevTips_ (Youtube)
 
--_Roberto Matthews_ (YouTube)
+-_Roberto Matthews_ (Youtube)
 
--_CodeKnight_ (YouTube)
+-_CodeKnight_ (Youtube)
 
--_Dudley Storey_ (YouTube)
+-_Dudley Storey_ (Youtube)
 
--_CSS3 = Awesome_ (YouTube)
+-_CSS3 = Awesome_ (Youtube)
 
--_WesBos_ (YouTube)
+-_WesBos_ (Youtube)
 
--_Traversy Media_ (YouTube)
+-_Traversy Media_ (Youtube)
 
 ## License
 
