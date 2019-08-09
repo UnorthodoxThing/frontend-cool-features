@@ -1,6 +1,6 @@
 # Hamburger-Effects-01:
 
-...
+Simple Hamburger animation.
 
 ## Keynotes
 
@@ -9,6 +9,8 @@
 + Use `:before` and `:after` to create the top and bottom level of the hamburger icon.
 
 + Add `cursor:pointer`.
+
++ Use `<button>` to create accessibility.
 
 ## Two Ways to Create an Animated Hamburger Menu
 
