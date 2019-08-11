@@ -22,6 +22,11 @@ html {
   background: orange;
 }
 
+/*
+NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburger::before',
+'.hamburger::after' and '.hamburger'
+*/
+
 .hamburger {
   /* Create size of the hamburger's layer - the line(s) */
   width: 50px;
@@ -42,10 +47,13 @@ html {
 .hamburger::after {
   content: '';
   position: absolute;
+  /* Create size of the hamburger's layer - the line(s) */
   width: 50px;
   height: 6px;
+  /* Styles */
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* animation presets */
   transition: .5s;
 }
 
