@@ -57,6 +57,7 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   transition: .5s;
 }
 
+/* Position/ Separate the lines */
 .hamburger::before {
   top: -16px;
 }
