@@ -16,8 +16,8 @@ html {
   /* presets */
   cursor: pointer;
   /* Size of container */
-  width: 80px;
-  height: 80px;
+  width: 8em;
+  height: 8em;
   /* Styles */
   background: orange;
 }
@@ -29,8 +29,8 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
 
 .hamburger {
   /* Create size of the hamburger's layer - the line(s) */
-  width: 50px;
-  height: 6px;
+  width: 5rem;
+  height: 0.6rem;
   /* Styles */
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -40,7 +40,7 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   left: 50%;
   transform: translate(-50%, -50%);
   /* animation presets */
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .hamburger::before,
@@ -48,20 +48,38 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   content: '';
   position: absolute;
   /* Create size of the hamburger's layer - the line(s) */
-  width: 50px;
-  height: 6px;
+  width: 5rem;
+  height: 0.6rem;
   /* Styles */
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   /* animation presets */
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* Position/ Separate the lines */
 .hamburger::before {
-  top: -16px;
+  top: -1.6rem;
 }
 
 .hamburger::after {
-  top: 16px;
+  top: 1.6rem;
+}
+
+/* animation when active */
+/* Makes the middle line disappear */
+.icon-container.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+/* Rotates and position the top and bottom lines */
+.icon-container.active .hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon-container.active .hamburger::after {
+  top: 0;
+  transform: rotate(135deg);
 }
