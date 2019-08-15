@@ -168,6 +168,16 @@ HTML:
         </ul>
         </nav>
 
+Output:
+
+Closed menu:
+
+![1200x780 x-menu](https://user-images.githubusercontent.com/24542308/63091592-2b164e00-bfa2-11e9-8d09-a3283ccd60b3.png)
+
+Opened menu:
+
+![1200x780 x-menu-close](https://user-images.githubusercontent.com/24542308/63091593-2b164e00-bfa2-11e9-90ba-90e5ffe68544.png)
+
 ## Credits
 
 - _Smashing_ (website) - [Building Accessible Menu Systems](https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/)
