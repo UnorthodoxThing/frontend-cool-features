@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <style media="screen">
-      .hamburger::before,
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <style media="screen">
+    .hamburger::before,
       .hamburger::after {
         /* animation presets */
         transition: top 150ms; /* 150ms is 0.15 seconds */
@@ -20,19 +21,21 @@
         top: 0;
       }
     </style>
-    <title>Minus Hamburger</title>
-  </head>
-  <body>
-    <div class="icon-container">
-      <div class="hamburger"></div>
-    </div>
+  <title>Minus Hamburger</title>
+</head>
 
-    <script type="text/javascript">
-      let icon = document.querySelector('.icon-container');
+<body>
+  <div class="icon-container">
+    <div class="hamburger"></div>
+  </div>
 
-      icon.addEventListener("click", function() {
-        icon.classList.toggle('collapsed');
-      });
-    </script>
-  </body>
+  <script type="text/javascript">
+    let icon = document.querySelector('.icon-container');
+
+    icon.addEventListener("click", function() {
+      icon.classList.toggle('collapsed');
+    });
+  </script>
+</body>
+
 </html>
