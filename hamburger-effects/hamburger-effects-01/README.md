@@ -140,8 +140,6 @@ JavaScript (JQuery):
          $(this).toggleClass('no-hamburgler');
          });
 
-! Learn to make Arrow Turn animation from hamburger icon
-
 ## Thinking About accessibility
 
 You can inform when a submenu is expanded or not to  screen-readers.
