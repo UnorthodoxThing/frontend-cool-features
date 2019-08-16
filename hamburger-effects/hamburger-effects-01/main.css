@@ -38,8 +38,12 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   /* animation presets */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -52,8 +56,11 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   height: 0.6rem;
   /* Styles */
   background: #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   /* animation presets */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -70,16 +77,21 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
 /* Makes the middle line disappear */
 .icon-container.active .hamburger {
   background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
 
 /* Rotates and position the top and bottom lines */
 .icon-container.active .hamburger::before {
   top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .icon-container.active .hamburger::after {
   top: 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
