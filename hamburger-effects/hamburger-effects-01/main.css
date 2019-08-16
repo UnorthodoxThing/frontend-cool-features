@@ -58,19 +58,11 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Position/ Separate the lines */
+/* Position and separate the lines */
 .hamburger::before {
   top: -1.6rem;
 }
 
 .hamburger::after {
   top: 1.6rem;
-}
-
-.icon-container.collapsed .hamburger::before {
-  top: 0;
-}
-
-.icon-container.collapsed .hamburger::after {
-  top: 0;
 }

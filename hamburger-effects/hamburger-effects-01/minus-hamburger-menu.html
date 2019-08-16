@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <style media="screen">
-      .hamburger {
-        /* animation presets */
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
-      }
-
       .hamburger::before,
       .hamburger::after {
         /* animation presets */
-        transition: margin-top 1s;
+        transition: top 150ms; /* 150ms is 0.15 seconds */
+      }
+
+      .icon-container.collapsed .hamburger::before {
+        top: 0;
+      }
+
+      .icon-container.collapsed .hamburger::after {
+        top: 0;
       }
 
     </style>
