@@ -8,6 +8,8 @@
       .hamburger::after {
         /* animation presets */
         transition: top 150ms; /* 150ms is 0.15 seconds */
+        -webkit-transition: top 150ms;
+        -o-transition: top 150ms;
       }
 
       .icon-container.collapsed .hamburger::before {
@@ -17,7 +19,6 @@
       .icon-container.collapsed .hamburger::after {
         top: 0;
       }
-
     </style>
     <title>Minus Hamburger</title>
   </head>
