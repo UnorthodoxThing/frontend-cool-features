@@ -12,6 +12,8 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   /* presets */
   cursor: pointer;
@@ -41,10 +43,6 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  /* animation presets */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .hamburger::before,
@@ -58,10 +56,6 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
   background: #fff;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  /* animation presets */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 /* Position/ Separate the lines */
@@ -71,4 +65,12 @@ NOTE: Make sure the styles for the hamburger lines are consistent with '.hamburg
 
 .hamburger::after {
   top: 1.6rem;
+}
+
+.icon-container.collapsed .hamburger::before {
+  top: 0;
+}
+
+.icon-container.collapsed .hamburger::after {
+  top: 0;
 }

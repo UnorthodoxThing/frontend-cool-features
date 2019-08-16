@@ -2,6 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <style media="screen">
+      .hamburger {
+        /* animation presets */
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+      }
+
+      .hamburger::before,
+      .hamburger::after {
+        /* animation presets */
+        transition: margin-top 1s;
+      }
+
+    </style>
     <title>Minus Hamburger</title>
   </head>
   <body>
@@ -9,5 +25,12 @@
       <div class="hamburger"></div>
     </div>
 
+    <script type="text/javascript">
+      let icon = document.querySelector('.icon-container');
+
+      icon.addEventListener("click", function() {
+        icon.classList.toggle('collapsed');
+      });
+    </script>
   </body>
 </html>
