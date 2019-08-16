@@ -71,6 +71,14 @@ CSS:
          margin-top: 0;
         }
 
+JavaScript:
+
+        let icon = document.querySelector('.icon-container');
+
+        icon.addEventListener("click", function() {
+          icon.classList.toggle('collapsed');
+        });
+
 JavaScript (JQuery):
 
         $(document).ready(function(){
