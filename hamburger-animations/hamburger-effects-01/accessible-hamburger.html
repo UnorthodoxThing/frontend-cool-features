@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Accessible Hamburger</title>
+  </head>
+  <body>
+
+    <nav id="navigation">
+    <button aria-expanded="false" aria-controls="menu-list">Menu</button>
+    <ul id="menu-list" hidden>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    </nav>
+
+    <script type="text/javascript">
+      var navButton = document.querySelector('nav button');
+      navButton.addEventListener('click', function() {
+          let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+          this.setAttribute('aria-expanded', !expanded);
+          let menu = this.nextElementSibling;
+          menu.hidden = !menu.hidden;
+      });
+
+    </script>
+  </body>
+</html>
