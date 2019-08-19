@@ -2,6 +2,8 @@
 
 Animations, transitions and effects.
 
+To see list of description of available hamburger animations, see [Table of Contents](#Table-of-Contents).
+
 ## Keynotes
 
 Usually, the hamburger icon is place at the TOP RIGHT corner and the brand logo at the top left corner. However, if you choose to add more than one icon, such as, a login icon or a search icon and place the brand logo icon in the middle, the hamburger icon should be placed at the TOP LEFT corner. If there's a back button where it should be at the top left aswell, you'll need to sacrifice one.
@@ -157,14 +159,32 @@ Facebook is the most commonly cited example of this. Within their navigational t
 
 ...
 
-## Table of Contents
+## Two Ways to Animate Hamburger Menu and Many Ways to Create a Hamburger Menu
+
+You can achieve the animation by via `checkbox` or with JavaScript.
+
+To create the hamburger, there are a couple of ways to do it.
+
+- CSS `::before`, `::after`, `content:'';` and some style.
+
+- 3x `<span>` tags
+
+- "fa fa hamburger" linked [Font Awesome](https://fontawesome.com/icons/bars?style=solid)
+
+- image files
+
+## Table-of-Contents
 
 * [hamburger-effects-01](#hamburger-effects-01)
 * [hamburger-effects-02](#hamburger-effects-02)
 
 ### hamburger-effects-01
 
-...
+**"X-Hamburger Menu"**
+
+### hamburger-effects-02
+
+**"Minus-Hamburger Menu"**
 
 ## Credits
 
