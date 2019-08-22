@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <style media="screen">
+      button {
+        /* reset default button styles */
+        border: none;
+        background-color: inherit;
+      }
+
+      .icon-container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      ul li {
+        list-style: none;
+      }
+
+      ul li a {
+        text-decoration: none;
+      }
+    </style>
     <title>Accessible Hamburger</title>
   </head>
   <body>
 
-    <nav id="navigation">
+    <nav class="icon-container" id="navigation">
     <button aria-expanded="false" aria-controls="menu-list">Menu</button>
     <ul id="menu-list" hidden>
         <li><a href="/">Home</a></li>
