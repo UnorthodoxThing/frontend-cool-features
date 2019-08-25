@@ -16,6 +16,8 @@ Features: toggle-able.
 
 + Use `<button>` to create accessibility.
 
++ Use clear-contrast CSS `:focus` pseudo effect.
+
 ### Three Lines to X Effect
 
 Three lines transform into an 'X' when clicked. Have JavaScript toggle a class when the menu is clicked.
@@ -113,8 +115,16 @@ HTML:
         </ul>
         </nav>
 
+## Browser Compatibility
+
+- CSS `:target` is not supported in IE 8 or earlier versions.
+
+- For :focus to work in IE8, a <!DOCTYPE> must be declared.
+
 ## Credits
 
 - _Smashing_ (website) - [Building Accessible Menu Systems](https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/)
 
 - _mmtuts_ (Youtube) - [How to Create an HTML Dropdown Menu | Learn HTML and CSS | HTML Tutorial | HTML for Beginners](https://youtu.be/rgUp302f_lY)
+
+- _Useful Angle_ (website) - [CSS :focus-within](https://usefulangle.com/post/128/css-focus-within)
