@@ -25,11 +25,15 @@
       }
 
       nav ul {
-        float: left;
+        float: left; /* determine whether this is necessary or not */
+        /* Other styles */
+        position: absolute;
+        width: 100%;
+        /* Add background color */
+        background-color: orange;
       }
 
       nav ul li {
-        float:left;
         list-style: none;
       }
 
@@ -37,7 +41,13 @@
         display: block;
         /* Font size should be smaller than the main or parent */
         /* Optional: decrease padding */
+        padding: 10px;
         text-decoration: none;
+        /* Styles here */
+        /* Choose text-align value */
+        text-align: center;
+        /* Add color */
+        color: #000;
       }
 
       /* Dropdowns Style */
@@ -68,14 +78,26 @@
         /* Add background-color */
       }
 
-      /* Add tab effect */
+      /* Add FOCUS effect */
+
+      nav ul li ul li a:focus {
+        /* Add background-color */
+      }
 
       button {
         /* reset default button styles */
         border: none;
+        box-shadow: none;
+        cursor: pointer;
         background-color: inherit;
-        position: absolute;
-        top: 75%;
+        /* position: absolute;
+        top: 75%; */
+        /* Styles here */
+        /* Add width */
+        /* Add height */
+        /* Add background */
+        /* Add color */
+
       }
 
       .icon-container {
