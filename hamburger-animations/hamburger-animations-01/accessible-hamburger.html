@@ -104,8 +104,16 @@
         box-shadow: none;
         cursor: pointer;
         background-color: inherit;
-        /* position: absolute;
-        top: 75%; */
+        position: absolute;
+        /* Center position
+        This renders .hamburger centering styles redundant
+        DELETE its styles at main.css when using this */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         /* Styles here */
         /* Add width */
         /* Add height */
@@ -127,18 +135,27 @@
         /* background-color: orange; */
         width: 180px;
       }
+
+      /* Aria Styles */
+
+      &[aria-expanded='true'] .hamburger {
+        /* Animates/ Styles */
+      }
     </style>
     <title>Accessible Hamburger</title>
   </head>
   <body>
 
     <nav class="icon-container" id="navigation">
-    <button aria-expanded="false" aria-controls="menu-list">Menu</button>
-    <ul id="menu-list" hidden>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
+    <button aria-expanded="false" aria-controls="menu-list">
+      <div class="hamburger"></div>
+    </button>
+
+    <ul id="menu-list" role="menu" hidden>
+        <li role="presentation"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">About</a></li>
+        <li role="presentation"><a href="#">Shop</a></li>
+        <li role="presentation"><a href="#">Contact</a></li>
     </ul>
     </nav>
 
@@ -151,6 +168,12 @@
           menu.hidden = !menu.hidden;
       });
 
+      // TODO: Does not activate animation, fix below VVV
+      let icon = document.querySelector('.icon-container');
+
+      icon.addEventListener("click", function() {
+        icon.classList.toggle('active');
+      });
     </script>
   </body>
 </html>
