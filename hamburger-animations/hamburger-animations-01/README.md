@@ -128,3 +128,5 @@ HTML:
 - _mmtuts_ (Youtube) - [How to Create an HTML Dropdown Menu | Learn HTML and CSS | HTML Tutorial | HTML for Beginners](https://youtu.be/rgUp302f_lY)
 
 - _Useful Angle_ (website) - [CSS :focus-within](https://usefulangle.com/post/128/css-focus-within)
+
+- _Stefany Web Design_ (website) - [Accessible Hamburger Grid Navigation](https://youtu.be/GaXJzMHCn14)
