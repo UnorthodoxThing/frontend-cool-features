@@ -116,10 +116,17 @@
         transform: translate(-50%, -50%);
         /* Styles here */
         /* Add width */
+        width: 80px;
         /* Add height */
+        height: 80px;
         /* Add background */
         /* Add color */
 
+      }
+
+      button:hover,
+      button:focus {
+        background-color: lightblue;
       }
 
       .icon-container {
@@ -141,6 +148,46 @@
 
       &[aria-expanded='true'] .hamburger {
         /* Animates/ Styles */
+      }
+
+      /* X-Burger animations */
+
+      .hamburger {
+        /* animation presets */
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+      }
+
+      .hamburger::before,
+      .hamburger::after {
+        /* animation presets */
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+      }
+
+      /* animation when active */
+      /* Makes the middle line disappear */
+      .icon-container.active .hamburger {
+        background: rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+      }
+
+      /* Rotates and position the top and bottom lines */
+      .icon-container.active .hamburger::before {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .icon-container.active .hamburger::after {
+        top: 0;
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
       }
     </style>
     <title>Accessible Hamburger</title>
