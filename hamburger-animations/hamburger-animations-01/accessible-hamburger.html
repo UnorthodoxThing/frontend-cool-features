@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <style media="screen">
-      html {
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <style media="screen">
+    html {
         /* font-size: 24px; */
       }
 
@@ -50,7 +51,7 @@
         color: #000;
       }
 
-      /* Dropdowns Style */
+      /* ===== Dropdowns Style ===== */
 
       nav ul li ul {
         display: none;
@@ -115,9 +116,8 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         /* Styles here */
-        /* Add width */
+        /* Match 'width' and 'height' of nav on display */
         width: 80px;
-        /* Add height */
         height: 80px;
         /* Add background */
         /* Add color */
@@ -150,7 +150,7 @@
         /* Animates/ Styles */
       }
 
-      /* X-Burger animations */
+      /* ===== X-Burger animations ===== */
 
       .hamburger {
         /* animation presets */
@@ -190,38 +190,44 @@
         transform: rotate(135deg);
       }
     </style>
-    <title>Accessible Hamburger</title>
-  </head>
-  <body>
+  <title>Accessible Hamburger</title>
+</head>
 
-    <nav class="icon-container" id="navigation">
+<body>
+
+  <nav class="icon-container" id="navigation">
     <button aria-expanded="false" aria-controls="menu-list">
       <div class="hamburger"></div>
     </button>
 
     <ul id="menu-list" role="menu" hidden>
-        <li role="presentation"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">About</a></li>
-        <li role="presentation"><a href="#">Shop</a></li>
-        <li role="presentation"><a href="#">Contact</a></li>
+      <li role="presentation"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">About</a></li>
+      <li role="presentation"><a href="#">Shop</a></li>
+      <li role="presentation"><a href="#">Contact</a></li>
     </ul>
-    </nav>
+  </nav>
 
-    <script type="text/javascript">
-      var navButton = document.querySelector('nav button');
-      navButton.addEventListener('click', function() {
-          let expanded = this.getAttribute('aria-expanded') === 'true' || false;
-          this.setAttribute('aria-expanded', !expanded);
-          let menu = this.nextElementSibling;
-          menu.hidden = !menu.hidden;
-      });
+  <script type="text/javascript">
+    // Accessible controls
 
-      // TODO: Does not activate animation, fix below VVV
-      let icon = document.querySelector('.icon-container');
+    var navButton = document.querySelector('nav button');
 
-      icon.addEventListener("click", function() {
-        icon.classList.toggle('active');
-      });
-    </script>
-  </body>
+    navButton.addEventListener('click', function() {
+      let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+      let menu = this.nextElementSibling;
+      menu.hidden = !menu.hidden;
+    });
+
+    // 'X' hamburger animations
+
+    let icon = document.querySelector('.icon-container');
+
+    icon.addEventListener("click", function() {
+      icon.classList.toggle('active');
+    });
+  </script>
+</body>
+
 </html>
