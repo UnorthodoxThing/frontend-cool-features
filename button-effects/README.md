@@ -80,6 +80,54 @@ To ensure your button design is right for your users, you need to ask a few ques
 
 - If you have two or more buttons in your view, (e.g. dialog box), **does the button with the primary action have strongest visual weight?** Make the distinction between two options clear, by using different visual weight for each button.
 
++ Buttons have voice and stronger
+
+Buttons are fundamental interface elements. However, they help establishing voice and tone of product.
+
+Serious - sharp edges
+
+Neutral - rounded corners
+
+Friendly - pill shape
+
++ Create proper button hierarchy
+
+User interface should guide users towards their goals. Give them visual clues on where to click next.
+
++ Provide visual Feedback:
+
+When button is pressed...
+
+show upload motion; They can change their form based on the input from the user.
+
++ Increase touch and click area
+
+example
+
+Regular 44px / 44px
+
+On Touch or Click 44px / 44px (+25%)
+
+Touch tagerts
+
+10mmm radius
+
+Increase with +25% = 15mm radius
+
+Try to add invisible area around button which is going to help users to click more easily especially on mobile
+
++ Give buttons breathing space
+
++ Use (consistent) descriptive labels
+
++ Focus on Accessibility e.g. contrast
+
+
+
+
+
+
+
 ## Table of Contents
 
 * Simple buttons
