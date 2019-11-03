@@ -5,7 +5,13 @@ Various decorated dropdown effects.
 There are various types of dropdowns. They may different with different display size. It would be more optimal for desktop view to have `hover` effect, and mobile viewers to have `onclick` (and also be associated with html `<button
 >` tag)
 
-1. Dropdown menu TWO levels
+WARNING: If anything changes from order, rename and reorder from repo and in this README file.
+
+1. Dropdown menu ONE level
+
+...
+
+2. Dropdown menu TWO levels
 
 (1) dropdown-01
 
@@ -37,7 +43,7 @@ use / events: on hover
 
 Reference: _HTML Dog_ - [CSS Dropdowns](https://htmldog.com/examples/dropdowns3/)
 
-2. Dropdown menu MULTI levels
+2. Dropdown menu MULTI levels (more than 2)
 
 (3) dropdown-03
 
