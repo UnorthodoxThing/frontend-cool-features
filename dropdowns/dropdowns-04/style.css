@@ -42,4 +42,81 @@ li:hover > ul {
   display: block;
 }
 
-/* Styling starts here */
+/* ===== Styling starts here ===== */
+
+:root {
+  --first-level-color: yellow;
+  --second-level-color: orange;
+  --third-level-color: red;
+}
+
+/* resets */
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#main_nav li {
+  list-style: none;
+}
+
+/* animation */
+
+#main_nav ul {
+  transition: 0.5s;
+}
+
+#main_nav li {
+  transition: 0.5s;
+}
+
+/* style */
+/* => POSITION */
+#main_nav li {
+  position: relative;
+  float: left;
+  width: 150px;
+  list-style: none;
+}
+
+#main_nav ul ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#main_nav ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* => UTILITIES on hover-effect */
+/* description: Color highlight on first level and second level */
+#main_nav li:hover, #main_nav li:hover li {
+  background: #ddd;
+}
+
+/* description: color highlight for second level on HOVER */
+#main_nav li li:hover, #main_nav li li:hover li {
+  background: #bbb;
+}
+
+/* description: color highlight for third level on HOVER */
+#main_nav li li li:hover, #main_nav li li li:hover li {
+  background: #999;
+}
+
+/* description: color highlight for fourth level on HOVER */
+#main_nav li li li li:hover {
+  background: #6a6666;
+}
+
+/* on HOVER make visible for all levels */
+/* SELECT all ul elements where the parent is #main_nav li */
+#main_nav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
