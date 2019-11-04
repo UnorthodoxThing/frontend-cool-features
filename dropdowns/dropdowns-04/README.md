@@ -6,7 +6,7 @@ For: Desktops media queries. If left unattended for mobile queries, it will have
 
 use / events: on hover
 
-[insert image sample]
+![dropdown-04](https://user-images.githubusercontent.com/24542308/68129543-529b0800-ff4c-11e9-888b-969e09110f7d.png)
 
 The essential presets:
 
