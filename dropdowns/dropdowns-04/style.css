@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* = 10px */
+}
+
+/* Presets */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  position: relative;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+/* BASIC hover effect */
+
+li:hover ul {
+  display: block;
+}
+
+/* More presets FOR multi-level dropdowns */
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* MULTI-LEVEL hover effect */
+
+li:hover > ul {
+  display: block;
+}
+
+/* Styling starts here */
