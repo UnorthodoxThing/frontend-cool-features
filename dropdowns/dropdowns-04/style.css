@@ -23,11 +23,11 @@ ul ul {
   display: none;
 }
 
-/* BASIC hover effect */
+/* BASIC hover effect; the following that is commented is not neccessary */
 
-li:hover ul {
+/* li:hover ul {
   display: block;
-}
+} */
 
 /* More presets FOR multi-level dropdowns */
 
@@ -42,7 +42,14 @@ li:hover > ul {
   display: block;
 }
 
+/* Also, the above code is written at the very bottom! */
+
 /* ===== Styling starts here ===== */
+
+#main_nav li {
+  padding: 20px; /* specify size */
+  border: 1px solid red; /* customize */
+}
 
 :root {
   --first-level-color: yellow;
@@ -71,12 +78,17 @@ a {
   transition: 0.5s;
 }
 
+#main_nav {
+  display: flex;
+  justify-content: center;
+}
+
 /* style */
 /* => POSITION */
 #main_nav li {
   position: relative;
   float: left;
-  width: 150px;
+  width: 150px; /* Specify size */
   list-style: none;
 }
 
