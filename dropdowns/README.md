@@ -82,3 +82,6 @@ The IE only style sheet is loaded using the conditional comment
 [Web A11y Tutorials](https://www.w3.org/WAI/tutorials/menus/flyout/)
 
 ## Credits
+
+See the following...
+- _Focus on Function_ - [Responsive CSS3 Multi-Level, Drop-Down Menu (no JavaScript)](http://fofwebdesign.co.uk/freebies-for-websites/css/multi-rwd-menu.htm)
