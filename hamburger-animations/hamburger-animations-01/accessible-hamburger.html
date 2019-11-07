@@ -136,6 +136,7 @@
       }
 
       #menu-list {
+        display: block; /* ESSENTIAL for PROGRESSIVE JAVASCRIPT */
         position: absolute;
         top: 100%;
         left: 0;
@@ -189,6 +190,10 @@
         -ms-transform: rotate(135deg);
         transform: rotate(135deg);
       }
+
+      #menul-list.active {
+        display: block;
+      }
     </style>
   <title>Accessible Hamburger</title>
 </head>
@@ -196,11 +201,11 @@
 <body>
 
   <nav class="icon-container" id="navigation">
-    <button aria-expanded="false" aria-controls="menu-list">
+    <button aria-expanded="true" aria-controls="menu-list">
       <div class="hamburger"></div>
     </button>
 
-    <ul id="menu-list" role="menu" hidden>
+    <ul id="menu-list" role="menu" aria-hidden="true">
       <li role="presentation"><a href="#">Home</a></li>
       <li role="presentation"><a href="#">About</a></li>
       <li role="presentation"><a href="#">Shop</a></li>
@@ -209,16 +214,48 @@
   </nav>
 
   <script type="text/javascript">
+  // TODO:
+  // 1. Hide #menu-list, invisible to users BUT not to screenreaders
+  // 2. Create toggle class when onClck addEventListener to display menu and
+  // toggle A11y too
+  // Use aria-hidden="true" to hide from screenreaders and
+  // #menu-list css property display: block; ?!!!!!!!!!!!
+  let navButton = document.querySelector('nav button');
+  let menuList = document.querySelector('#menu-list');
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function(event) {
+    menuList.setAttribute('aria-hidden', false);
+    menuList.style.display = 'none';
+    navButton.setAttribute('aria-expanded', false);
+  })
     // Accessible controls
 
-    var navButton = document.querySelector('nav button');
 
     navButton.addEventListener('click', function() {
-      let expanded = this.getAttribute('aria-expanded') === 'true' || false;
-      this.setAttribute('aria-expanded', !expanded);
-      let menu = this.nextElementSibling;
-      menu.hidden = !menu.hidden;
+        let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+        this.setAttribute('aria-expanded', !expanded);
+        let ariaHidden = menuList.getAttribute('aria-hidden') === 'true' || false;
+        menuList.setAttribute('aria-hidden', !ariaHidden);
+        //
+        // let menuDisplay = menuList.style.display === 'block' || 'none';
+        // if (menuDisplay === 'block') {
+        //   menuDisplay = 'none';
+        // }
+        // if (menuDisplay === 'none') {
+        //   menuDisplay = 'block';
+        // }
+
     });
+
+    // navButton.addEventListener('click', function() {
+    //   let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    //   this.setAttribute('aria-expanded', !expanded);
+    //   let menu = this.nextElementSibling;
+    //   menu.hidden = !menu.hidden;
+    // });
 
     // 'X' hamburger animations
 
@@ -226,6 +263,7 @@
 
     navButton.addEventListener("click", function() {
       icon.classList.toggle('active');
+      menuList.classList.toggle('active'); /// !!!!!!!!????????
     });
   </script>
 </body>
