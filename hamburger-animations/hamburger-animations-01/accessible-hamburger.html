@@ -13,9 +13,6 @@
         /* Add width */
         /* Add height */
         background-color: orange;
-      }
-
-      nav {
         /* Style text */
         font-family: arial;
         color: #fff;
@@ -136,7 +133,7 @@
       }
 
       #menu-list {
-        display: block; /* ESSENTIAL for PROGRESSIVE JAVASCRIPT */
+        display: block; /* ESSENTIAL for PROGRESSIVLY ENHANCED */
         position: absolute;
         top: 100%;
         left: 0;
@@ -214,57 +211,40 @@
   </nav>
 
   <script type="text/javascript">
-  // TODO:
-  // 1. Hide #menu-list, invisible to users BUT not to screenreaders
-  // 2. Create toggle class when onClck addEventListener to display menu and
-  // toggle A11y too
-  // Use aria-hidden="true" to hide from screenreaders and
-  // #menu-list css property display: block; ?!!!!!!!!!!!
+
+  // ===== Study Notes / Method =====
+  // 1. Hide #menu-list lists. i.e. It's invisible to users
+  // BUT not to screenreaders
+  //2. Create toggle  for the following:
+  // - display property of values 'block' and 'none'
+  // - aria-hidden property 'true' and 'false'
+  // - aria-expand property 'true' and 'false'
   let navButton = document.querySelector('nav button');
   let menuList = document.querySelector('#menu-list');
 
-
-
+  // Default Settings
 
   document.addEventListener('DOMContentLoaded', function(event) {
     menuList.setAttribute('aria-hidden', false);
     menuList.style.display = 'none';
     navButton.setAttribute('aria-expanded', false);
   })
-    // Accessible controls
 
+    // Accessible controls
 
     navButton.addEventListener('click', function() {
         let expanded = this.getAttribute('aria-expanded') === 'true' || false;
         this.setAttribute('aria-expanded', !expanded);
         let ariaHidden = menuList.getAttribute('aria-hidden') === 'true' || false;
         menuList.setAttribute('aria-hidden', !ariaHidden);
-        //
-        // let menuDisplay = menuList.style.display === 'block' || 'none';
-        // if (menuDisplay === 'block') {
-        //   menuDisplay = 'none';
-        // }
-        // if (menuDisplay === 'none') {
-        //   menuDisplay = 'block';
-        // }
 
-        // menuList.setAttribute("class", "active");
+        // Display and hides lists on click event listerner
         if (menuList.style.display == 'none') {
           menuList.style.display = 'block';
         } else if (menuList.style.display == 'block') {
           menuList.style.display = 'none';
         }
-        // if (menuList.style.display == 'block') {
-        //   menuList.style.display == 'none';
-        // }
     });
-
-    // navButton.addEventListener('click', function() {
-    //   let expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    //   this.setAttribute('aria-expanded', !expanded);
-    //   let menu = this.nextElementSibling;
-    //   menu.hidden = !menu.hidden;
-    // });
 
     // 'X' hamburger animations
 
@@ -272,7 +252,6 @@
 
     navButton.addEventListener("click", function() {
       icon.classList.toggle('active');
-      // menuList.classList.toggle('active'); /// !!!!!!!!????????
     });
   </script>
 </body>
