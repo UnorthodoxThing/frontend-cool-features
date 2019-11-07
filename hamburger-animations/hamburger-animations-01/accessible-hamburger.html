@@ -248,6 +248,15 @@
         //   menuDisplay = 'block';
         // }
 
+        // menuList.setAttribute("class", "active");
+        if (menuList.style.display == 'none') {
+          menuList.style.display = 'block';
+        } else if (menuList.style.display == 'block') {
+          menuList.style.display = 'none';
+        }
+        // if (menuList.style.display == 'block') {
+        //   menuList.style.display == 'none';
+        // }
     });
 
     // navButton.addEventListener('click', function() {
@@ -263,7 +272,7 @@
 
     navButton.addEventListener("click", function() {
       icon.classList.toggle('active');
-      menuList.classList.toggle('active'); /// !!!!!!!!????????
+      // menuList.classList.toggle('active'); /// !!!!!!!!????????
     });
   </script>
 </body>
