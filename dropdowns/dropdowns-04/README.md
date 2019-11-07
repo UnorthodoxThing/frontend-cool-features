@@ -44,6 +44,28 @@ CSS Styles
         #main_nav li {
           padding: 20px; /* specify size */
           border: 1px solid red; /* customize */
-        }
+        } /*
 
 Reference: _HTML Dog_ - [CSS Dropdowns](https://htmldog.com/examples/dropdowns3/)
+
+## Keynotes
+
+Media queries reminders
+
+- CSS @Media
+
+- @import at-rules
+
+- To test and monitor media states using the `window.matchMedia()` and `MediaQueryList.addListener()` JavaScript methods
+
+- _MDN_ - [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+* Include hover effects in a different media query.
+
+## Credits
+
+- _GTCoding_ - [How to Create Dropdown Menu using Flexbox Tutorial](https://youtu.be/B4d7Ct9wngs)
+
+- _GTCoding_ - [Responsive Mobile Dropdown Navigation Tutorial](https://youtu.be/mmsbW4PuK9Q)
+
+- _Caler Edwards_ [Easy Multi-Level Dropdown Menu Tutorial - Using Only CSS (With Animated Dropdown Arrows)](https://youtu.be/EalgZXjDR2Q)
