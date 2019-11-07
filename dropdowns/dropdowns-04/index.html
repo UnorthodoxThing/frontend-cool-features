@@ -6,25 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <title>dropdown-04</title>
+
+  <style media="screen">
+    /* @media(max-width: 480px) {
+      #main_nav {
+        display: none;
+
+      }
+
+      #main_nav ul {
+        flex-direction: column;
+      }
+
+      #main_nav li {
+        padding: 0 auto;
+      }
+
+      #main_nav a {
+        /* height: 48px; */
+      }
+/*
+      .second-floor-a1 {
+        position: static;
+        width: 100%;
+      }
+    } */
+    /* @media screen and (max-width: 480px) {
+      * {
+        border: 1px solid green;
+      }
+    } */
+  </style>
 </head>
 
 <body>
+  <div id="menu-con">Menu</div>
   <nav id="main_nav">
     <ul class="first-floor">
       <li>
-        <a href="">floor a</a>
-        <ul class="second-floor-a1">
+        <a href="">floor a
+        <span class="arrow">&#x25BC;</span></a>
+        <ul class="second-floor-a1"> <!-- refer class to as 'submenu-#'-->
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
         </ul>
       </li>
       <li>
-        <a href="">floor b</a>
-        <ul class="second-floor-b1">
+        <a class="has-submenu" href="">floor b
+        <span class="arrow">&#x25B6;</span></a>
+        <ul class="second-floor-b1"> <!-- refer class to -->
           <li>
             <a href="">2nd floor</a>
-            <ul class="third-floor-b1">
+            <ul class="third-floor-b1"> <!-- refer class to -->
               <li><a href="">3rd floor</a></li>
               <li><a href="">3rd floor</a></li>
             </ul>
@@ -75,6 +109,11 @@
       </li>
     </ul>
 
+<script type="text/javascript">
+
+
+
+</script>
 </body>
 
 </html>
