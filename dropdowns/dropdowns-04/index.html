@@ -41,40 +41,42 @@
 </head>
 
 <body>
-  <div id="menu-con">Menu</div>
+  <div id="menu-icon">Menu</div>
   <nav id="main_nav">
     <ul class="first-floor">
       <li>
         <a href="">floor a
         <span class="arrow">&#x25BC;</span></a>
-        <ul class="second-floor-a1"> <!-- refer class to as 'submenu-#'-->
+        <ul class="second-floor-a1 submenu"> <!-- refer class to as 'submenu-#'-->
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
         </ul>
       </li>
       <li>
-        <a class="has-submenu" href="">floor b
+        <a href="">floor b
         <span class="arrow">&#x25BC;</span></a>
-        <ul class="second-floor-b1"> <!-- refer class to -->
+        <ul class="second-floor-b1 submenu has-submenu"> <!-- refer class to -->
           <li>
             <a href="">2nd floor
             <span class="arrow">&#x25B6;</span></a>
-            <ul class="third-floor-b1"> <!-- refer class to -->
+            <ul class="third-floor-b1 has-submenu"> <!-- refer class to -->
               <li><a href="">3rd floor</a></li>
               <li><a href="">3rd floor</a></li>
             </ul>
           </li>
           <li>
-            <a href="">2nd floor</a>
-            <ul class="third-floor-b2">
+            <a href="">2nd floor
+            <span class="arrow">&#x25B6;</span></a>
+            <ul class="third-floor-b2 has-submenu">
               <li><a href="">3rd floor</a></li>
               <li><a href="">3rd floor</a></li>
               <li><a href="">3rd floor</a></li>
               <li>
-                <a href="">3rd floor</a>
+                <a href="">3rd floor
+                <span class="arrow">&#x25B6;</span></a>
                 <!-- <a href="">Marsupials</a> -->
-                <ul class="fourth-floor-b1">
+                <ul class="fourth-floor-b1 has-submenu">
                   <li><a href="">4th floor</a></li>
                   <li><a href="">4th floor</a></li>
                   <li><a href="">4th floor</a></li>
@@ -84,8 +86,9 @@
             </ul>
           </li>
           <li>
-            <a href="">2nd floor</a>
-            <ul class="second-floor-b2">
+            <a href="">2nd floor
+            <span class="arrow">&#x25B6;</span></a>
+            <ul class="second-floor-b2 has-submenu">
               <li><a href="">3rd floor</a></li>
               <li><a href="">3rd floor</a></li>
               <li><a href="">3rd floor</a></li>
@@ -96,7 +99,8 @@
       <li>
         <a href="">floor c
         <span class="arrow">&#x25BC;</span></a>
-        <ul class="second-floor-c1">
+        <!-- Test ... Is NOT sub-menu. IS submenu -->
+        <ul class="second-floor-c1 has-submenu">
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
@@ -106,7 +110,7 @@
       <li>
         <a href="">floor d
         <span class="arrow">&#x25BC;</span></a>
-        <ul class="second-floor-d1">
+        <ul class="second-floor-d1 submenu">
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
           <li><a href="">2nd floor</a></li>
@@ -115,8 +119,28 @@
     </ul>
 
 <script type="text/javascript">
+const mq = window.matchMedia('(max-width: 480px)';
 
+if (mq.matches) {
+  const mainNav = document.getElementById('main_nav');
+  const submenu = document.querySelectorAll('.submenu');
+  const hasSubmenu = document.querySelectorAll('.has-submenu');
+  const menuIcon = document.getElementById('menu-icon');
 
+  menuIcon.addEventListener('click', function() {
+    if (mainNav.style.display != 'block') {
+      mainNav.style.display = 'block';
+      this.innerHTML = 'X';
+    } else {
+      mainNav.style.display = 'none';
+      this.innerHTML = 'MENU';
+    }
+  });
+
+  hasSubmenu.addEventListener('click', function() {
+    submenu.classList.toggle('display-block');
+  });
+}
 
 </script>
 </body>
