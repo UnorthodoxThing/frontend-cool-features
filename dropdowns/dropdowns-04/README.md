@@ -54,6 +54,25 @@ Media queries reminders
 
 - CSS @Media
 
+Note to Self:
+
+For mega menus, allow mobile and mini-tablets with mobile-responsive dropdowns (have hamburger), and basic tablets and desktops with desktop-responsive dropdown designs (i.e. no hamburger)
+
+smartphones mobiles (Portrait)
+@media (min-width: 320px) and (max-width: 480px) {}
+
+Mobiles (landscape)
+@media (min-width: 481px) and (max-width: 767px) {}
+
+Tablets (landscape)
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+Laptops, desktops
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+Beyond...
+@media (min-width:1281px)
+
 - @import at-rules
 
 - To test and monitor media states using the `window.matchMedia()` and `MediaQueryList.addListener()` JavaScript methods
