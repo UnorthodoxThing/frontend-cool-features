@@ -159,7 +159,7 @@ a {
     box-sizing: border-box;
   }
 
-  #main-nav {
+  #main_nav {
     display: block;
     /* position: block; */
   }

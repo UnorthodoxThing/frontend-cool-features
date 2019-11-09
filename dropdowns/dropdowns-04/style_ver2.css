@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* = 10px */
+}
+
+:root {
+  --first-level-color: yellow;
+  --second-level-color: orange;
+  --third-level-color: red;
+}
+
+/* ===== Styles ===== */
+
+/* resets */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#main_nav li {
+  list-style: none;
+}
+
+/* ===== Utitlies ===== */
+
+/* Presets */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  position: relative;
+}
+
+/* functionality: HIDES sub-menus */
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+/* ===== Mobile ===== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #main_nav {
+    display: block;
+  }
+
+  #main_nav a {
+    display: block;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+  /* ===== Desktop and w/e [test] ===== */
+/* Testing only to and from mobile and desktop responsive menu */
+
+@media (min-width: 481px) {
+
+  /* Presets fo 'multi levels' dropdowns */
+  /* NB: If there's more dropdowns add extra 'ul' to target them */
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+
+  /* ===== Styling ===== */
+
+  #main_nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #main_nav li {
+    padding: 20px; /* specify size */
+    border: 1px solid red; /* customize */
+  }
+
+  /* ===== Utitlies ===== */
+  /* For 'two levels' dropdowns, add the following and it will be enough */
+  /* li:hover ul {
+    display: block;
+  } */
+
+  /* For more thant two or 'multiple levels', add the following instead */
+  li:hover > ul {
+    display: block;
+  }
+
+  /* animation */
+  #main_nav ul {
+    transition: 0.5s;
+  }
+
+  #main_nav li {
+    transition: 0.5s;
+  }
+
+
+}
