@@ -81,6 +81,25 @@ Beyond...
 
 * Include hover effects in a different media query.
 
+## How to Detect Screen Resolution with JavaScript?
+
+Answer => Use the window.screen Object
+
+You can simply use the `width` and `height` property of the `window.screen` object to get the resolution of the screen (i.e. width and height of the screen).
+
+To detect the native resolution of a mobile device display (e.g. retina display) you have to multiply the screen width and height with the device pixel ratio, like `window.screen.width * window.devicePixelRatio` and `window.screen.height * window.devicePixelRatio`.
+
+The **device pixel ratio** tells the browser how many of the device's screen actual pixels should be used to draw a single CSS pixel.
+
+Desktops screens generally have a device pixel ratio of 1.
+
+## Find the size of the browser window
+
+To get the outer window size use `window.outerWidth` and `window.outerHeight`.
+To get the inner window size use `window.innerWidth` and `window.innerHeight`.
+
+With IE you can get it with `document.bodyclientWidth` and `document.body.clientHeight`.
+
 ## Credits
 
 - _GTCoding_ - [How to Create Dropdown Menu using Flexbox Tutorial](https://youtu.be/B4d7Ct9wngs)
