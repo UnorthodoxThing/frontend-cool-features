@@ -11,11 +11,14 @@
 
   const menuIcon = document.getElementById('menu-icon');
   const mainNav = document.getElementById('main_nav');
+  const menu = document.querySelector('nav ul')
 
-  const submenu1 = document.querySelector('.submenu1');
-  const hasSubmenu1 = document.querySelector('.has-submenu1');
-  const submenu_1 = document.querySelector('.submenu-1');
-  const submenu_2 = document.querySelector('.submenu-2');
+  const hasSubmenu = document.querySelectorAll('.has-submenu');
+  const submenu = document.querySelectorAll('.submenu');
+  const hasSubmenu1 = document.querySelector('.has-submenu-1');
+  const submenu1 = document.querySelector('.submenu-1');
+  const hasSubmenu2 = document.querySelector('.has-submenu-2');
+  const submenu2 = document.querySelector('.submenu-2');
   const submenu_2_1 = document.querySelector('.submenu-2-1');
   const submenu_2_2 = document.querySelector('.submenu-2-2');
   const submenu_2_2_1 = document.querySelector('.submenu-2-2-1');
@@ -28,40 +31,48 @@ if (mq.matches) {
   menuIcon.addEventListener('click', function() {
     if (mainNav.style.display != 'block') {
       mainNav.style.display = 'block';
+      // menu.style.display = 'block';
       this.innerHTML = 'X';
     } else {
       mainNav.style.display = 'none';
+      // menu.style.display = 'none';
       this.innerHTML = 'MENU';
     }
   });
+}
 
-// SOLUTION to submenu continously closing when cliced on!!!
-// Return false, or
-// e.preventDefault on targeted menu (vanilla js)
-// e.stopPropogation (JQuery)
+
+// BUG: submenus closes when clicked on
+// Solution. below:
+// Prevent submenu from closing when clicked on
   mainNav.addEventListener('click', function(e) {
     e.preventDefault();
   })
+//
+//   hasSubmenu1.addEventListener('click', function() {
+//     // if (submenu1.style.display != 'block') {
+//     //   submenu1.style.setProperty('display', 'block');
+//     // } else {
+//     //   submenu1.style.setProperty('display', 'none');
+//     // }
+//     submenu1.classList.toggle('display-block');
+//   });
+// }
 
-  //  submenu_ = document.querySelectorAll('.submenu');
-
-  hasSubmenu1.addEventListener('click', function(e) {
-    if (submenu1.style.display != 'block') {
-      submenu1.style.setProperty('display', 'block');
-    } else {
-      submenu1.style.setProperty('display', 'none');
-    }
-    // submenu1.classList.toggle('display-block');
+const length = 2;
+for (let i = 0; i < hasSubmenu.length; i++) {
+  hasSubmenu[i].addEventListener('click', function() {
+    submenu[i].classList.toggle('display-block');
   });
 }
 
-function displayBlock() {
-  if (submenu1.style.display != 'none' || 'initial'){
-    submenu1.removeProperty('display');
-  } else {
-    submenu1.style.display = 'block';
-  }
-}
+// function displayBlock() {
+//   if (submenu1.style.display != 'none' || 'initial'){
+//     submenu1.removeProperty('display');
+//   } else {
+//     submenu1.style.display = 'block';
+//   }
+// }
 
 // let submenu_1stfloor = 4;
 
