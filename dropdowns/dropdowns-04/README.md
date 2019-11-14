@@ -4,6 +4,18 @@ Description: Highlight on hovered on level, darker highlight on second level, an
 
 For: Desktops media queries. If left unattended for mobile queries, it will have a funny result.
 
+[X] Desktop Responsive
+
+[ ] Mobile responsive
+
+[X] Progressively Enhanced
+
+[ ] Semantic (A11y) -> html ARIA
+
+[ ] Accessible -> implement w/ JS ARIA
+
+[ ] UI/UX (Clickability size/ fluidity in design)
+
 use / events: on hover
 
 ![dropdown-04](https://user-images.githubusercontent.com/24542308/68129543-529b0800-ff4c-11e9-888b-969e09110f7d.png)
@@ -81,6 +93,24 @@ Beyond...
 
 * Include hover effects in a different media query.
 
+- [Mobile Responsive] w/ JavaScript event listener
+
+You may encounter a bug where when you click on the submenu that's opened by clicking on the menu icon the submenu closes and resets the whole program.
+
+The following will solve the problem. The reason is to do with a bubbling process.
+
+[vanilla JavaScript]
+
+          [target submenu].addEventListener('click', function(e) {
+            e.preventDefault();
+            })
+
+[JQuery]
+
+        e.stopPropogation();
+
+
+
 ## How to Detect Screen Resolution with JavaScript?
 
 Answer => Use the window.screen Object
@@ -109,3 +139,7 @@ With IE you can get it with `document.bodyclientWidth` and `document.body.client
 - _Caler Edwards_ [Easy Multi-Level Dropdown Menu Tutorial - Using Only CSS (With Animated Dropdown Arrows)](https://youtu.be/EalgZXjDR2Q)
 
 - _optimizely_ - [Use screen measurements to design for responsive breakpoints](https://help.optimizely.com/Build_Campaigns_and_Experiments/Use_screen_measurements_to_design_for_responsive_breakpoints)
+
+- _StackOverflow_ - [plain javascript version of e preventdefault](https://stackoverflow.com/questions/19172084/plain-javascript-version-of-e-preventdefault/19172113#19172113)
+
+- _GeeksForGeeks_ - [How to avoid dropdown menu to close menu items on clicking inside](https://www.geeksforgeeks.org/hot-to-avoid-dropdown-menu-to-close-menu-items-on-clicking-inside/)
