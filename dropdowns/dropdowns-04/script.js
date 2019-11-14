@@ -15,16 +15,20 @@
 
   const hasSubmenu = document.querySelectorAll('.has-submenu');
   const submenu = document.querySelectorAll('.submenu');
-  const hasSubmenu1 = document.querySelector('.has-submenu-1');
-  const submenu1 = document.querySelector('.submenu-1');
-  const hasSubmenu2 = document.querySelector('.has-submenu-2');
-  const submenu2 = document.querySelector('.submenu-2');
-  const submenu_2_1 = document.querySelector('.submenu-2-1');
-  const submenu_2_2 = document.querySelector('.submenu-2-2');
-  const submenu_2_2_1 = document.querySelector('.submenu-2-2-1');
-  const submenu_2_3 = document.querySelector('.submenu-2-3');
-  const submenu_3 = document.querySelector('.submenu-3');
-  const submenu_4 = document.querySelector('.submenu-4');
+  // // submenu 1
+  // const hasSubmenu1 = document.querySelector('.has-submenu-1');
+  // const submenu1 = document.querySelector('.submenu-1');
+  // // submenu 2
+  // const hasSubmenu2 = document.querySelector('.has-submenu-2');
+  // const submenu2 = document.querySelector('.submenu-2');
+  // const submenu2_1 = document.querySelector('.submenu-2-1');
+  // const submenu2_2 = document.querySelector('.submenu-2-2');
+  // const submenu2_2_1 = document.querySelector('.submenu-2-2-1');
+  // const submenu2_3 = document.querySelector('.submenu-2-3');
+  // // submenu 3
+  // const submenu3 = document.querySelector('.submenu-3');
+  // // submenu 4
+  // const submenu4 = document.querySelector('.submenu-4');
 
 
 if (mq.matches) {
@@ -59,7 +63,10 @@ if (mq.matches) {
 //   });
 // }
 
-const length = 2;
+// hasSubmenu.addEventListener('click', function() {
+//   submenu.classList.toggle('display-block');
+// });
+
 for (let i = 0; i < hasSubmenu.length; i++) {
   hasSubmenu[i].addEventListener('click', function() {
     submenu[i].classList.toggle('display-block');
