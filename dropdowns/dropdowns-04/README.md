@@ -107,3 +107,5 @@ With IE you can get it with `document.bodyclientWidth` and `document.body.client
 - _GTCoding_ - [Responsive Mobile Dropdown Navigation Tutorial](https://youtu.be/mmsbW4PuK9Q)
 
 - _Caler Edwards_ [Easy Multi-Level Dropdown Menu Tutorial - Using Only CSS (With Animated Dropdown Arrows)](https://youtu.be/EalgZXjDR2Q)
+
+- _optimizely_ - [Use screen measurements to design for responsive breakpoints](https://help.optimizely.com/Build_Campaigns_and_Experiments/Use_screen_measurements_to_design_for_responsive_breakpoints)

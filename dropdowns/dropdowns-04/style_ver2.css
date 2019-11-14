@@ -26,7 +26,7 @@ a {
 }
 
 #main_nav {
-  display: flex;
+  /* display: flex; */
 }
 
 /* ===== Utitlies ===== */
@@ -40,12 +40,6 @@ ul {
 li {
   display: inline;
   position: relative;
-}
-
-/* functionality: HIDES sub-menus */
-ul ul {
-  position: absolute;
-  display: none;
 }
 
 /* ===== Utitlies ===== */
@@ -91,24 +85,33 @@ ul ul {
     line-height: 2em;
     font-family: roboto;
     font-size: 2em;
+    cursor: pointer;
   }
 
-  #main_nav {
+  #main_nav,
+  #main_nav ul ul {
     display: none;
+  }
+
+  #main_nav ul {
+    display: flex;
+    flex-direction: column;
   }
 
   #main_nav a,
   #menu-icon {
-    display: block;
-    height: 1em;
+    height: 48px;
+    padding: 16px;
+    margin: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  #main_nav ul ul  {
-    display: none;
+  .has-submenu1 {
+    /* display: none; */
   }
+
 
   /* .submenu,
   .has-submenu {
@@ -134,9 +137,6 @@ ul ul {
     width: 90%;
   } */
 
-  .display-block > li {
-    display: block !important;
-  }
 
   .arrow {
     margin-left: 0.8em;
@@ -144,6 +144,10 @@ ul ul {
 
 
   /* ===== Utitlies ===== */
+
+  .display-block {
+    display: block !important;
+  }
 }
 
   /* ===== Desktop and w/e [test] ===== */
@@ -199,6 +203,12 @@ ul ul {
     display: block;
   }
 
+  /* functionality: HIDES sub-menus */
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+
   /* animation */
   #main_nav ul {
     transition: 0.5s;
@@ -207,6 +217,5 @@ ul ul {
   #main_nav li {
     transition: 0.5s;
   }
-
 
 }
