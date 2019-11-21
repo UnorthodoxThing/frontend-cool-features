@@ -6,7 +6,7 @@ For: Desktops media queries. If left unattended for mobile queries, it will have
 
 [X] Desktop Responsive
 
-[ ] Mobile responsive
+[X] Mobile responsive
 
 [X] Progressively Enhanced
 
@@ -15,6 +15,12 @@ For: Desktops media queries. If left unattended for mobile queries, it will have
 [ ] Accessible -> implement w/ JS ARIA
 
 [ ] UI/UX (Clickability size/ fluidity in design)
+
+TODO:
+
+- note and clean html comments, add semanitics
+- CSS: clean comments, style for usability
+- clean js comments, add ARIA (after html is completed)
 
 use / events: on hover
 
@@ -109,7 +115,15 @@ The following will solve the problem. The reason is to do with a bubbling proces
 
         e.stopPropogation();
 
++ Targeting all submenu and giving the toggle class
 
+(1) Target the <a> tag class="has-submenu", and its <ul> tag class="submenu"
+
+(2) Put in a variable and use `querySelectorAll`
+
+Q. What does querySelectorAll collect?
+
+(3) Use a for-loop to collect and assign an event listener where you may toggle CSS property 'display: block;'
 
 ## How to Detect Screen Resolution with JavaScript?
 
@@ -129,6 +143,14 @@ To get the outer window size use `window.outerWidth` and `window.outerHeight`.
 To get the inner window size use `window.innerWidth` and `window.innerHeight`.
 
 With IE you can get it with `document.bodyclientWidth` and `document.body.clientHeight`.
+
+### Modern Use
+
+=> `window.matchMedia([CSS media queries])`
+
+Browser Compatibility:
+
+Modern browsers, and above IE9.
 
 ## Credits
 

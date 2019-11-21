@@ -45,14 +45,13 @@ if (mq.matches) {
   });
 }
 
-
 // BUG: submenus closes when clicked on
 // Solution. below:
 // Prevent submenu from closing when clicked on
   mainNav.addEventListener('click', function(e) {
     e.preventDefault();
   })
-//
+
 //   hasSubmenu1.addEventListener('click', function() {
 //     // if (submenu1.style.display != 'block') {
 //     //   submenu1.style.setProperty('display', 'block');
@@ -63,62 +62,8 @@ if (mq.matches) {
 //   });
 // }
 
-// hasSubmenu.addEventListener('click', function() {
-//   submenu.classList.toggle('display-block');
-// });
-
 for (let i = 0; i < hasSubmenu.length; i++) {
   hasSubmenu[i].addEventListener('click', function() {
     submenu[i].classList.toggle('display-block');
   });
 }
-
-// function displayBlock() {
-//   if (submenu1.style.display != 'none' || 'initial'){
-//     submenu1.removeProperty('display');
-//   } else {
-//     submenu1.style.display = 'block';
-//   }
-// }
-
-// let submenu_1stfloor = 4;
-
-// for (let i = 0; i < hasSubmenu.length; i++) {
-//   hasSubmenu[i].addEventListener('click', function() {
-//     submenu[i].classList.toggle('display-block');
-//   });
-// }
-
-
-// for (let i = 0; i < submenu_1stfloor; i++) {
-//   let current = submenu_[i];
-//   current.addEventListener('click', function() {
-//     current.classList.toggle('display-block');
-//   })
-// }
-  // const submenu = document.querySelectorAll('.submenu');
-  // const hasSubmenu = document.querySelectorAll('.has-submenu');
-  // const test;
-  //
-  //     if (mq.matches) {
-  //
-  //       menuIcon.addEventListener('click', function() {
-  //         if (mainNav.style.display == 'none') {
-  //           mainNav.style.display = 'block';
-  //           this.innerHTML = 'X';
-  //         } else {
-  //           mainNav.style.display = 'none';
-  //           this.innerHTML = 'MENU';
-  //         }
-  //       });
-  //
-  //
-  //
-  //       menuIcon.style.background = 'yellow';
-  //     }
-  //
-  //     test.onload = function display(item) {
-  //       item.addEventListener('click', function() {
-  //         submenu.classList.toggle('display-block');
-  //       });
-  //     }
