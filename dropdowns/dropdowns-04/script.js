@@ -16,7 +16,7 @@
   const hasSubmenu = document.querySelectorAll('.has-submenu');
   const submenu = document.querySelectorAll('.submenu');
   // // submenu 1
-  // const hasSubmenu1 = document.querySelector('.has-submenu-1');
+  const hasSubmenu1 = document.querySelector('.has-submenu-1');
   // const submenu1 = document.querySelector('.submenu-1');
   // // submenu 2
   // const hasSubmenu2 = document.querySelector('.has-submenu-2');
@@ -30,27 +30,43 @@
   // // submenu 4
   // const submenu4 = document.querySelector('.submenu-4');
 
+  const arrow1 = document.getElementById('arrow1');
+
 if (mq.matches) {
   menuIcon.addEventListener('click', function() {
     if (mainNav.style.display != 'block') {
       mainNav.style.display = 'block';
-      this.innerHTML = 'X';
+      this.innerHTML = '&#10006;';
     } else {
       mainNav.style.display = 'none';
       this.innerHTML = 'MENU';
     }
   });
-}
 
-// BUG: submenus closes when clicked on
-// Solution. below:
-// Prevent submenu from closing when clicked on
+  // BUG: submenus closes when clicked on
+  // Solution. below:
+  // Prevent submenu from closing when clicked on
   mainNav.addEventListener('click', function(e) {
     e.preventDefault();
   });
 
-for (let i = 0; i < hasSubmenu.length; i++) {
-  hasSubmenu[i].addEventListener('click', function() {
-    submenu[i].classList.toggle('display-block');
-  });
+  for (let i = 0; i < hasSubmenu.length; i++) {
+    hasSubmenu[i].addEventListener('click', function() {
+      submenu[i].classList.toggle('display-block');
+    });
+  }
+
+  // If submenu is clicked, its arrow will point down.
+  // If press elsewhere beside the inside of the submenu or the submenu higher level itself
+  // it should close and point rigth again
+  // ESSENTIAL: Target a tag to get a response
+  hasSubmenu1.addEventListener('click', function() {
+    arrow1.innerHTML = '&#x25B6;';
+  })
 }
+
+
+// TODO:
+// Reset arrow to point to the left
+// Add an event listener when click it points down
+// Use 'transform' property with 'rotate()' value
