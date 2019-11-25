@@ -30,16 +30,13 @@
   // // submenu 4
   // const submenu4 = document.querySelector('.submenu-4');
 
-
 if (mq.matches) {
   menuIcon.addEventListener('click', function() {
     if (mainNav.style.display != 'block') {
       mainNav.style.display = 'block';
-      // menu.style.display = 'block';
       this.innerHTML = 'X';
     } else {
       mainNav.style.display = 'none';
-      // menu.style.display = 'none';
       this.innerHTML = 'MENU';
     }
   });
@@ -50,17 +47,7 @@ if (mq.matches) {
 // Prevent submenu from closing when clicked on
   mainNav.addEventListener('click', function(e) {
     e.preventDefault();
-  })
-
-//   hasSubmenu1.addEventListener('click', function() {
-//     // if (submenu1.style.display != 'block') {
-//     //   submenu1.style.setProperty('display', 'block');
-//     // } else {
-//     //   submenu1.style.setProperty('display', 'none');
-//     // }
-//     submenu1.classList.toggle('display-block');
-//   });
-// }
+  });
 
 for (let i = 0; i < hasSubmenu.length; i++) {
   hasSubmenu[i].addEventListener('click', function() {

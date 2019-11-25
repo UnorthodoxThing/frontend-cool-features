@@ -54,13 +54,25 @@ li {
   background: #bbb;
 }
 
+#main_nav li li a {
+  background: #bbb;
+}
+
 /* description: color highlight for third level on HOVER */
 #main_nav li li li:hover, #main_nav li li li:hover li {
   background: #999;
 }
 
+#main_nav li li li a {
+  background: #999;
+}
+
 /* description: color highlight for fourth level on HOVER */
 #main_nav li li li li:hover {
+  background: #6a6666;
+}
+
+#main_nav li li li li a {
   background: #6a6666;
 }
 
@@ -101,42 +113,18 @@ li {
   #main_nav a,
   #menu-icon {
     height: 48px;
-    padding: 16px;
-    margin: 2px;
+    padding: 21px;
+    /* padding: 16px; */
+    /* margin: 5px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid red 1px;
   }
-
-  /* .submenu,
-  .has-submenu {
-    display: none;
-  }
-
-  .submenu,
-  .has-submenu {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    display: block;
-    width: 100%;
-  } */
-
-  /* .submenu li {
-    display: none;
-    position: absolute;
-    top: 0;
-  } */
-
-  /* .has-submenu a {
-    width: 90%;
-  } */
-
 
   .arrow {
     margin-left: 0.8em;
   }
-
 
   /* ===== Utitlies ===== */
 
