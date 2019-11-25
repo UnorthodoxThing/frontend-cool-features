@@ -7,6 +7,30 @@ html {
   font-size: 62.5%; /* = 10px */
 }
 
+:root {
+  --first-level-color: yellow;
+  --second-level-color: orange;
+  --third-level-color: red;
+}
+
+/* ===== Styles ===== */
+
+/* resets */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#main_nav li {
+  list-style: none;
+}
+
+#main_nav {
+  /* display: flex; */
+}
+
+/* ===== Utitlies ===== */
+
 /* Presets */
 ul {
   padding: 0;
@@ -18,94 +42,8 @@ li {
   position: relative;
 }
 
-ul ul {
-  position: absolute;
-  display: none;
-}
-
-/* BASIC hover effect; the following that is commented is not neccessary */
-
-/* li:hover ul {
-  display: block;
-} */
-
-/* More presets FOR multi-level dropdowns */
-
-ul ul ul {
-  left: 100%;
-  top: 0;
-}
-
-/* MULTI-LEVEL hover effect */
-
-li:hover > ul {
-  display: block;
-}
-
-/* Also, the above code is written at the very bottom! */
-
-/* ===== Styling starts here ===== */
-
-#main_nav li {
-  padding: 20px; /* specify size */
-  border: 1px solid red; /* customize */
-}
-
-:root {
-  --first-level-color: yellow;
-  --second-level-color: orange;
-  --third-level-color: red;
-}
-
-/* resets */
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-#main_nav li {
-  list-style: none;
-}
-
-/* animation */
-
-#main_nav ul {
-  transition: 0.5s;
-}
-
-#main_nav li {
-  transition: 0.5s;
-}
-
-#main_nav {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* style */
-/* => POSITION */
-#main_nav li {
-  position: relative;
-  float: left;
-  width: 150px; /* Specify size */
-  list-style: none;
-}
-
-#main_nav ul ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  visibility: hidden;
-  opacity: 0;
-}
-
-#main_nav ul ul ul {
-  left: 100%;
-  top: 0;
-}
-
-/* => UTILITIES on hover-effect */
+/* ===== Utitlies ===== */
+/* UTILITIES on hover-effect */
 /* description: Color highlight on first level and second level */
 #main_nav li:hover, #main_nav li:hover li {
   background: #ddd;
@@ -116,13 +54,25 @@ a {
   background: #bbb;
 }
 
+#main_nav li li a {
+  background: #bbb;
+}
+
 /* description: color highlight for third level on HOVER */
 #main_nav li li li:hover, #main_nav li li li:hover li {
   background: #999;
 }
 
+#main_nav li li li a {
+  background: #999;
+}
+
 /* description: color highlight for fourth level on HOVER */
 #main_nav li li li li:hover {
+  background: #6a6666;
+}
+
+#main_nav li li li li a {
   background: #6a6666;
 }
 
@@ -133,150 +83,9 @@ a {
   opacity: 1;
 }
 
-/* TODO: BELOW */
+/* ===== Mobile ===== */
 
-@media (min-width: 500px) {
-  #main_nav li:hover .second-floor-a1 > li {
-    display: block;
-    top: 0px;
-  }
-
-  .second-floor-a1:hover .second-floor-b1 li {
-    display: block;
-  }
-
-  #menu-icon {
-    display: none;
-  }
-
-}
-
-/* MOBILE RESPONSIVE */
 @media (max-width: 480px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  #main_nav {
-    display: block;
-    /* position: block; */
-  }
-
-  #main_nav a {
-    /* Style box */
-    /* color */
-    /* background color */
-    display: block;
-    /* customize height */
-    height: 1em;
-    /* Choose font-family */
-    /* y/n(?) font-weight */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* If not already, get rid of text-decoration */
-    /* text-decoration: none; */
-    transition: background 0.4s;
-  }
-
-  #main_nav a:hover {
-    background: yellow;
-  }
-
-  #main_nav ul {
-    list-style: none;
-    display: flex;
-  }
-
-  #main_nav li {
-    width: 100%;
-    text-align: center;
-    position: relative;
-  }
-
-
-
-
-/* TARGET all first floor submenu */
-  .second-floor-a1 li {
-    display: none;
-    position: absolute;
-    top: 0px;
-  }
-
-  .second-floor-a1 {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-  }
-
-  .second-floor-a1 li {
-    position: relative;
-  }
-
-
-
-/* TARGET all second floor submenu */
-  .third-floor-b1 li {
-    display: none;
-  }
-
-  .third-floor-b1 {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0px;
-    left: 100%;
-    width: 120px;
-  }
-
-  .arrow {
-    margin-left: 8px;
-    color: white;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  #main_nav {
-    background: green;
-  }
-
-  #main_nav ul {
-    flex-direction: column;
-  }
-
-  #main_nav a {
-    height: 48px;
-  }
-
-  .second-floor-a1,
-  .second-floor-b1 {
-    position: static;
-    width: 100%;
-  }
-
-  .second-floor-a1 a {
-    width: 95%;
-    margin-left: 0 auto;
-    background: yellow;
-  }
-
-  .second-floor-b1 a {
-    width: 90%;
-    background: orange; /* make !important */
-  }
-
-  .display-block > li {
-    display: block; /* make !important*/
-  }
 
   #menu-icon {
     display: block;
@@ -287,5 +96,109 @@ a {
     font-size: 24pc;
     line-height: 2em;
     font-family: roboto;
+    font-size: 2em;
+    cursor: pointer;
   }
+
+  #main_nav,
+  #main_nav ul ul {
+    display: none;
+  }
+
+  #main_nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main_nav a,
+  #menu-icon {
+    height: 48px;
+    padding: 21px;
+    /* padding: 16px; */
+    /* margin: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid red 1px;
+  }
+
+  .arrow {
+    margin-left: 0.8em;
+  }
+
+  /* ===== Utitlies ===== */
+
+  .display-block {
+    display: block !important;
+  }
+}
+
+  /* ===== Desktop and w/e [test] ===== */
+/* Testing only to and from mobile and desktop responsive menu */
+
+@media (min-width: 481px) {
+
+  /* Presets fo 'multi levels' dropdowns */
+  /* NB: If there's more dropdowns add extra 'ul' to target them */
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+
+  /* ===== Styling ===== */
+
+  #main_nav {
+    /* Already declared 'display: flex' above */
+    justify-content: space-around;
+  }
+
+  #main_nav li {
+    padding: 20px; /* specify size */
+    border: 1px solid red; /* customize */
+    position: relative;
+    float: left;
+    width: 150px; /* Specify size */
+  }
+
+  #main_nav ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #main_nav ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  /* IF there's anymore levels, add more 'ul' and give the same syntax above */
+
+
+  /* ===== Utitlies ===== */
+  /* For 'two levels' dropdowns, add the following and it will be enough */
+  /* li:hover ul {
+    display: block;
+  } */
+
+  /* For more thant two or 'multiple levels', add the following instead */
+  li:hover > ul {
+    display: block;
+  }
+
+  /* functionality: HIDES sub-menus */
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+
+  /* animation */
+  #main_nav ul {
+    transition: 0.5s;
+  }
+
+  #main_nav li {
+    transition: 0.5s;
+  }
+
 }
