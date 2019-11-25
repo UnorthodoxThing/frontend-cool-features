@@ -8,9 +8,10 @@ html {
 }
 
 :root {
-  --first-level-color: yellow;
-  --second-level-color: orange;
-  --third-level-color: red;
+  --first-level-color: #ddd;
+  --second-level-color: #bbb;
+  --third-level-color: #999;
+  --fourth-level-color: #6a6666;
 }
 
 /* ===== Styles ===== */
@@ -46,12 +47,16 @@ li {
 /* UTILITIES on hover-effect */
 /* description: Color highlight on first level and second level */
 #main_nav li:hover, #main_nav li:hover li {
-  background: #ddd;
+  background: var(--first-level-color);
+}
+
+#main_nav li a {
+  background: var(--first-level-color); 
 }
 
 /* description: color highlight for second level on HOVER */
 #main_nav li li:hover, #main_nav li li:hover li {
-  background: #bbb;
+  background: var(--first-level-color);
 }
 
 #main_nav li li a {
