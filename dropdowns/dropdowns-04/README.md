@@ -15,6 +15,8 @@ For: Desktops media queries. If left unattended for mobile queries, it will have
 [ ] Accessible -> implement w/ JS ARIA
 
 [ ] UI/UX (Clickability size/ fluidity in design)
+  [X] - thumb size
+  [ ] - color (?)
 
 TODO:
 
@@ -124,6 +126,22 @@ The following will solve the problem. The reason is to do with a bubbling proces
 Q. What does querySelectorAll collect?
 
 (3) Use a for-loop to collect and assign an event listener where you may toggle CSS property 'display: block;'
+
++ Optimal Button size
+
+CSS pixels at 96 DPI
+
+Minimum: "Low priority"
+
+42px (11mm)
+
+Most preferred: "Medium Priority"
+
+60px  (16mm)
+
+Maximum: "High Priority"
+
+72px (19mm)
 
 ## How to Detect Screen Resolution with JavaScript?
 
