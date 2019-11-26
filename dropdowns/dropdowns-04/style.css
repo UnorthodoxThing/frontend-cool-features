@@ -51,7 +51,7 @@ li {
 }
 
 #main_nav li a {
-  background: var(--first-level-color); 
+  background: var(--first-level-color);
 }
 
 /* description: color highlight for second level on HOVER */
@@ -136,6 +136,26 @@ li {
   .display-block {
     display: block !important;
   }
+
+  /* Arrow rotate animation on 'click' event listener */
+  .arrow {
+    transition: transform 0.15s linear;
+  }
+
+  .display-rotate {
+    transform: rotate(90deg);
+  }
+
+  .display-selected {
+    background: var(--third-level-color);
+
+  }
+
+  /* .slideout-menu li .fa-arrow-right {
+}
+.slideout-menu li.active .fa-arrow-right {
+    transform: rotate(90deg);
+} */
 }
 
   /* ===== Desktop and w/e [test] ===== */

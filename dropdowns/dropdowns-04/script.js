@@ -1,12 +1,3 @@
-// TODO:
-// 1. add na event listener to '#menu-icon' when clicked the whole menu displays and the '#menu-icon' is a replaced With
-// with the text 'X', and
-// when toggled again menu closes and is replaced with the text 'menus'.
-// 2. Add an event listener where you can toggle display on 'click' with the submenus.
-// NB: all sub menus should display none in CSS mobile media queries
-
-// BUG:
-// Menu disappears when I click on the submenus
   const mq = window.matchMedia('(max-width: 480px)');
 
   const menuIcon = document.getElementById('menu-icon');
@@ -31,6 +22,9 @@
   // const submenu4 = document.querySelector('.submenu-4');
 
   const arrow1 = document.getElementById('arrow1');
+  const surfaceArrow = document.querySelectorAll('.arrow');
+
+  const topSubmenu = document.getElementById('top');
 
 if (mq.matches) {
   menuIcon.addEventListener('click', function() {
@@ -44,7 +38,7 @@ if (mq.matches) {
   });
 
   // BUG: submenus closes when clicked on
-  // Solution. below:
+  // SOLUTION below:
   // Prevent submenu from closing when clicked on
   mainNav.addEventListener('click', function(e) {
     e.preventDefault();
@@ -56,17 +50,29 @@ if (mq.matches) {
     });
   }
 
+  // Rotates arrow when 'clicked' on
+for (let i = 0; i < surfaceArrow.length; i++) {
+  // Sets arrow to point left as mobile presets
+  surfaceArrow[i].innerHTML = '&#x25B6;';
+
+// BUG: Does not highlight when selected
+  hasSubmenu[i].addEventListener('click', function() {
+    // Add class for toggle for arrows to rotate when clicked
+    surfaceArrow[i].classList.toggle('display-rotate');
+    // this.classList.toggle('display-selected');
+  });
+}
+
+topSubmenu.addEventListener('click', function() {
+  topSubmenu.classList.toggle('display-selected');
+})
+
   // If submenu is clicked, its arrow will point down.
   // If press elsewhere beside the inside of the submenu or the submenu higher level itself
   // it should close and point rigth again
   // ESSENTIAL: Target a tag to get a response
-  hasSubmenu1.addEventListener('click', function() {
-    arrow1.innerHTML = '&#x25B6;';
-  })
+  // hasSubmenu1.addEventListener('click', function() {
+  //   arrow1.innerHTML = '&#x25B6;';
+  // })
+// })
 }
-
-
-// TODO:
-// Reset arrow to point to the left
-// Add an event listener when click it points down
-// Use 'transform' property with 'rotate()' value
