@@ -21,10 +21,11 @@
   // // submenu 4
   // const submenu4 = document.querySelector('.submenu-4');
 
-  const arrow1 = document.getElementById('arrow1');
+  // const arrow1 = document.getElementById('arrow1');
   const surfaceArrow = document.querySelectorAll('.arrow');
 
-  const topSubmenu = document.getElementById('top');
+  // const topSubmenu = document.getElementById('top');
+  const topSubmenu = document.querySelector('ul li a');
 
 if (mq.matches) {
   menuIcon.addEventListener('click', function() {
@@ -48,6 +49,13 @@ if (mq.matches) {
     hasSubmenu[i].addEventListener('click', function() {
       submenu[i].classList.toggle('display-block');
     });
+    // TO ADD:
+    // If click elsewhere beside inside the menu, menu resets / toggle resets
+    hasSubmenu[i].addEventListener('click', function() {
+      // topSubmenu.parentNode.classList.toggle('display-selected');
+      hasSubmenu[i].classList.toggle('display-selected');
+      console.log("Hello");
+    });
   }
 
   // Rotates arrow when 'clicked' on
@@ -60,19 +68,18 @@ for (let i = 0; i < surfaceArrow.length; i++) {
     // Add class for toggle for arrows to rotate when clicked
     surfaceArrow[i].classList.toggle('display-rotate');
     // this.classList.toggle('display-selected');
+
+    // TO ADD:
+    // If click elsewhere beside inside the menu, menu resets / toggle resets
   });
+
 }
 
-topSubmenu.addEventListener('click', function() {
-  topSubmenu.classList.toggle('display-selected');
-})
+// hasSubmenu1.addEventListener('click', function() {
+//   // topSubmenu.parentNode.classList.toggle('display-selected');
+//   topSubmenu.classList.toggle('display-selected');
+//   console.log("Hello");
+// });
 
-  // If submenu is clicked, its arrow will point down.
-  // If press elsewhere beside the inside of the submenu or the submenu higher level itself
-  // it should close and point rigth again
-  // ESSENTIAL: Target a tag to get a response
-  // hasSubmenu1.addEventListener('click', function() {
-  //   arrow1.innerHTML = '&#x25B6;';
-  // })
-// })
 }
+// END

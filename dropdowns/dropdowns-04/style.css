@@ -50,17 +50,17 @@ li {
   background: var(--first-level-color);
 }
 
-#main_nav li a {
+/* #main_nav li a {
   background: var(--first-level-color);
-}
+} */
+
+/* #main_nav li:focus-within {
+  border: green solid 1px;
+} */
 
 /* description: color highlight for second level on HOVER */
 #main_nav li li:hover, #main_nav li li:hover li {
   background: var(--first-level-color);
-}
-
-#main_nav li li a {
-  background: #bbb;
 }
 
 /* description: color highlight for third level on HOVER */
@@ -91,6 +91,20 @@ li {
 /* ===== Mobile ===== */
 
 @media (max-width: 480px) {
+  /* ===== Styling ===== */
+  .has-submenu-1,
+  .has-submenu-2,
+  .has-submenu-3,
+  .has-submenu-4 {
+    background: var(--first-level-color);
+  }
+
+  .has-submenu-1 ~ ul,
+  .has-submenu-2 ~ ul,
+  .has-submenu-3 ~ ul,
+  .has-submenu-4 ~ ul {
+    background: var(--second-level-color);
+  }
 
   #menu-icon {
     display: block;
@@ -147,21 +161,19 @@ li {
   }
 
   .display-selected {
-    background: var(--third-level-color);
-
+    /* background: var(--third-level-color); */
+    background: yellow !important;
   }
-
-  /* .slideout-menu li .fa-arrow-right {
-}
-.slideout-menu li.active .fa-arrow-right {
-    transform: rotate(90deg);
-} */
 }
 
   /* ===== Desktop and w/e [test] ===== */
 /* Testing only to and from mobile and desktop responsive menu */
 
 @media (min-width: 481px) {
+
+  #menu-icon {
+    display: none;
+  }
 
   /* Presets fo 'multi levels' dropdowns */
   /* NB: If there's more dropdowns add extra 'ul' to target them */
@@ -198,7 +210,6 @@ li {
     top: 0;
   }
   /* IF there's anymore levels, add more 'ul' and give the same syntax above */
-
 
   /* ===== Utitlies ===== */
   /* For 'two levels' dropdowns, add the following and it will be enough */
