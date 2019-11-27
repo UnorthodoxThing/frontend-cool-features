@@ -101,7 +101,7 @@ Beyond...
 
 * Include hover effects in a different media query.
 
-- [Mobile Responsive] w/ JavaScript event listener
++ [Mobile Responsive] w/ JavaScript event listener BUG!!!! SOLVED!
 
 You may encounter a bug where when you click on the submenu that's opened by clicking on the menu icon the submenu closes and resets the whole program.
 
@@ -127,6 +127,8 @@ Q. What does querySelectorAll collect?
 
 (3) Use a for-loop to collect and assign an event listener where you may toggle CSS property 'display: block;'
 
+ex: arrow rotating animation
+
 + Optimal Button size
 
 CSS pixels at 96 DPI
@@ -143,6 +145,8 @@ Maximum: "High Priority"
 
 72px (19mm)
 
++ submenu styles highlight and animation when clicked
+
 ## How to Detect Screen Resolution with JavaScript?
 
 Answer => Use the window.screen Object
@@ -155,7 +159,7 @@ The **device pixel ratio** tells the browser how many of the device's screen act
 
 Desktops screens generally have a device pixel ratio of 1.
 
-## Find the size of the browser window
+### Find the size of the browser window
 
 To get the outer window size use `window.outerWidth` and `window.outerHeight`.
 To get the inner window size use `window.innerWidth` and `window.innerHeight`.

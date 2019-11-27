@@ -92,19 +92,6 @@ li {
 
 @media (max-width: 480px) {
   /* ===== Styling ===== */
-  .has-submenu-1,
-  .has-submenu-2,
-  .has-submenu-3,
-  .has-submenu-4 {
-    background: var(--first-level-color);
-  }
-
-  .has-submenu-1 ~ ul,
-  .has-submenu-2 ~ ul,
-  .has-submenu-3 ~ ul,
-  .has-submenu-4 ~ ul {
-    background: var(--second-level-color);
-  }
 
   #menu-icon {
     display: block;
@@ -117,6 +104,20 @@ li {
     font-family: roboto;
     font-size: 2em;
     cursor: pointer;
+  }
+
+  .has-submenu-1,
+  .has-submenu-2,
+  .has-submenu-3,
+  .has-submenu-4 {
+    background: var(--first-level-color);
+  }
+
+  .has-submenu-1 ~ ul,
+  .has-submenu-2 ~ ul,
+  .has-submenu-3 ~ ul,
+  .has-submenu-4 ~ ul {
+    background: var(--second-level-color);
   }
 
   #main_nav,
@@ -161,8 +162,22 @@ li {
   }
 
   .display-selected {
-    /* background: var(--third-level-color); */
+    /* background: var(--third-level-color);
+    Use '!important' for the third level*/
     background: yellow !important;
+  }
+
+  .first-floor-selected {
+    background: var(--second-level-color);
+    /* background: var(--third-level-color); */
+  }
+
+  .second-floor-selected {
+    background: var(--third-level-color);
+  }
+
+  .third-floor-selected {
+    background: var(--fourth-level-color);
   }
 }
 

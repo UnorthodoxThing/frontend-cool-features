@@ -27,6 +27,10 @@
   // const topSubmenu = document.getElementById('top');
   const topSubmenu = document.querySelector('ul li a');
 
+  const firstFloor = document.querySelectorAll('.first-floor');
+  const secondFloor = document.querySelectorAll('.second-floor');
+  const thirdFloor = document.querySelectorAll('.third-floor');
+
 if (mq.matches) {
   menuIcon.addEventListener('click', function() {
     if (mainNav.style.display != 'block') {
@@ -72,14 +76,16 @@ for (let i = 0; i < surfaceArrow.length; i++) {
     // TO ADD:
     // If click elsewhere beside inside the menu, menu resets / toggle resets
   });
-
 }
-
-// hasSubmenu1.addEventListener('click', function() {
-//   // topSubmenu.parentNode.classList.toggle('display-selected');
-//   topSubmenu.classList.toggle('display-selected');
-//   console.log("Hello");
-// });
 
 }
 // END
+
+// TODO:
+// Loop for
+// 1. first-floor and assign event listener and toggle class
+// first-floor-selected
+// 2. second-floor... do same as above
+// second-floor-selected
+// 3. third-floor
+// third-floor-selected
