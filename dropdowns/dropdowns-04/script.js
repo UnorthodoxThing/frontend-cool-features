@@ -53,39 +53,52 @@ if (mq.matches) {
     hasSubmenu[i].addEventListener('click', function() {
       submenu[i].classList.toggle('display-block');
     });
-    // TO ADD:
-    // If click elsewhere beside inside the menu, menu resets / toggle resets
-    hasSubmenu[i].addEventListener('click', function() {
-      // topSubmenu.parentNode.classList.toggle('display-selected');
-      hasSubmenu[i].classList.toggle('display-selected');
-      console.log("Hello");
-    });
+    // // TO ADD:
+    // // If click elsewhere beside inside the menu, menu resets / toggle resets
   }
 
   // Rotates arrow when 'clicked' on
 for (let i = 0; i < surfaceArrow.length; i++) {
-  // Sets arrow to point left as mobile presets
+  // Sets arrow to point left as mobile view presets
   surfaceArrow[i].innerHTML = '&#x25B6;';
 
-// BUG: Does not highlight when selected
   hasSubmenu[i].addEventListener('click', function() {
-    // Add class for toggle for arrows to rotate when clicked
     surfaceArrow[i].classList.toggle('display-rotate');
-    // this.classList.toggle('display-selected');
+
+    // ===== STYLE PREFERENCE option i =====
+    // description: highlights selected main submenus with ONE personal styles
+    hasSubmenu[i].classList.toggle('display-selected');
 
     // TO ADD:
     // If click elsewhere beside inside the menu, menu resets / toggle resets
   });
 }
 
-}
-// END
+// Uncomment below to use, comment out '===== STYLE PREFERENCE option i ====='
+// ===== STYLE PREFERENCE option ii =====
+// description: highlights selected main submenus with the same color as its following submenus, or
+// lower levels
 
-// TODO:
-// Loop for
-// 1. first-floor and assign event listener and toggle class
-// first-floor-selected
-// 2. second-floor... do same as above
-// second-floor-selected
-// 3. third-floor
-// third-floor-selected
+// for (let i = 0; i < firstFloor.length; i++) {
+//   firstFloor[i].addEventListener('click', function() {
+//     firstFloor[i].classList.toggle('first-floor-selected');
+//     console.log("Hello");
+//   });
+// }
+//
+// for (let i = 0; i < secondFloor.length; i++) {
+//   secondFloor[i].addEventListener('click', function() {
+//     secondFloor[i].classList.toggle('second-floor-selected');
+//     console.log("Hello2");
+//   });
+// }
+//
+// for (let i = 0; i < thirdFloor.length; i++) {
+//   thirdFloor[i].addEventListener('click', function() {
+//     thirdFloor[i].classList.toggle('third-floor-selected');
+//     console.log("Hello3");
+//   });
+// }
+// ===== STYLE PREFERENCE option ii ===== >>> (END)
+
+} // end

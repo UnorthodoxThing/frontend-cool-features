@@ -161,15 +161,24 @@ li {
     transform: rotate(90deg);
   }
 
+/* (1) Uncomment below to use */
+  /* ===== STYLE PREFERENCE option i =====
+  description: HIGHLIGHTS selected main submenus */
+
   .display-selected {
-    /* background: var(--third-level-color);
-    Use '!important' for the third level*/
+    /* Use '!important' for the third level */
     background: yellow !important;
   }
 
-  .first-floor-selected {
+/* (2) Uncomment below to use */
+  /* ===== STYLE PREFERENCE option ii =====
+  description: HIGHLIGHTS selected main submenus with the same color as its lower level
+  With selector: .third-floor-selected
+  USE '!important' for the third level
+  Because it gets ignored by more "important" selectors used on that element */
+
+  /* .first-floor-selected {
     background: var(--second-level-color);
-    /* background: var(--third-level-color); */
   }
 
   .second-floor-selected {
@@ -177,15 +186,14 @@ li {
   }
 
   .third-floor-selected {
-    background: var(--fourth-level-color);
-  }
+    background: var(--fourth-level-color) !important;
+  } */
 }
 
   /* ===== Desktop and w/e [test] ===== */
 /* Testing only to and from mobile and desktop responsive menu */
 
 @media (min-width: 481px) {
-
   #menu-icon {
     display: none;
   }
@@ -251,5 +259,4 @@ li {
   #main_nav li {
     transition: 0.5s;
   }
-
 }
