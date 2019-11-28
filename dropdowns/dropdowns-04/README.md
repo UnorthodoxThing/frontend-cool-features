@@ -174,6 +174,25 @@ Browser Compatibility:
 
 Modern browsers, and above IE9.
 
+## A11y (Accessibility) - WAI-ARIA
+
++ `aria-hidden`
+
+Values: `false`; `true`; `undefined`.
+
+`false`: (default) The element is exposed to the accessibility API.
+
+NB: Currently behaves inconsistently across browsers.
+
+`true`: The element is not exposed to the accessibility API.
+
+Hide content from assistive technology, cannot be used on a focusable element, cannot be used on the parent of an interactive element.
+
+
++ `role="presentation"` and `role="none"` will remove the semantic meaning of an element while still exposing it to assistive technology.
+
++ `aria-expanded`
+
 ## Credits
 
 - _GTCoding_ - [How to Create Dropdown Menu using Flexbox Tutorial](https://youtu.be/B4d7Ct9wngs)
