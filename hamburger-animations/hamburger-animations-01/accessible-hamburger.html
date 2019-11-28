@@ -202,7 +202,7 @@
       <div class="hamburger"></div>
     </button>
 
-    <ul id="menu-list" role="menu" aria-hidden="true">
+    <ul id="menu-list" role="menu" aria-hidden="false">
       <li role="presentation"><a href="#">Home</a></li>
       <li role="presentation"><a href="#">About</a></li>
       <li role="presentation"><a href="#">Shop</a></li>
@@ -225,7 +225,7 @@
   // Default Settings
 
   document.addEventListener('DOMContentLoaded', function(event) {
-    menuList.setAttribute('aria-hidden', false);
+    menuList.setAttribute('aria-hidden', true);
     menuList.style.display = 'none';
     navButton.setAttribute('aria-expanded', false);
   });
