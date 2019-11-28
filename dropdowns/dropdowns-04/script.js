@@ -2,36 +2,21 @@
 
   const menuIcon = document.getElementById('menu-icon');
   const mainNav = document.getElementById('main_nav');
-  const menu = document.querySelector('nav ul')
 
   const hasSubmenu = document.querySelectorAll('.has-submenu');
   const submenu = document.querySelectorAll('.submenu');
-  // // submenu 1
-  const hasSubmenu1 = document.querySelector('.has-submenu-1');
-  // const submenu1 = document.querySelector('.submenu-1');
-  // // submenu 2
-  // const hasSubmenu2 = document.querySelector('.has-submenu-2');
-  // const submenu2 = document.querySelector('.submenu-2');
-  // const submenu2_1 = document.querySelector('.submenu-2-1');
-  // const submenu2_2 = document.querySelector('.submenu-2-2');
-  // const submenu2_2_1 = document.querySelector('.submenu-2-2-1');
-  // const submenu2_3 = document.querySelector('.submenu-2-3');
-  // // submenu 3
-  // const submenu3 = document.querySelector('.submenu-3');
-  // // submenu 4
-  // const submenu4 = document.querySelector('.submenu-4');
 
-  // const arrow1 = document.getElementById('arrow1');
   const surfaceArrow = document.querySelectorAll('.arrow');
-
-  // const topSubmenu = document.getElementById('top');
-  const topSubmenu = document.querySelector('ul li a');
 
   const firstFloor = document.querySelectorAll('.first-floor');
   const secondFloor = document.querySelectorAll('.second-floor');
   const thirdFloor = document.querySelectorAll('.third-floor');
 
+
+// ===== MOBILE VIEW =====
+
 if (mq.matches) {
+  // Toggles between 'X' and 'MENU'
   menuIcon.addEventListener('click', function() {
     if (mainNav.style.display != 'block') {
       mainNav.style.display = 'block';
@@ -42,7 +27,7 @@ if (mq.matches) {
     }
   });
 
-  // BUG: submenus closes when clicked on
+  // BUG: menu closes when submenus are clicked on
   // SOLUTION below:
   // Prevent submenu from closing when clicked on
   mainNav.addEventListener('click', function(e) {
@@ -53,6 +38,9 @@ if (mq.matches) {
     hasSubmenu[i].addEventListener('click', function() {
       submenu[i].classList.toggle('display-block');
     });
+
+    // ===== WIP =====
+    hasSubmenu[i].setAttribute('aria-hidden', true)
     // // TO ADD:
     // // If click elsewhere beside inside the menu, menu resets / toggle resets
   }
@@ -101,4 +89,21 @@ for (let i = 0; i < surfaceArrow.length; i++) {
 // }
 // ===== STYLE PREFERENCE option ii ===== >>> (END)
 
+// ===== WIP =====
+// A11y - Accessible controls
+// Default presets on Mobile View
+mainNav.setAttribute('aria-hidden', true);
+menuIcon.setAttribute('aria-expanded', false);
+
+
+// Mockup from another code
+menuIcon.addEventListener('click', function() {
+    let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    this.setAttribute('aria-expanded', !expanded);
+    let ariaHidden = mainNav.getAttribute('aria-hidden') === 'true' || false;
+    mainNav.setAttribute('aria-hidden', !ariaHidden);
+});
 } // end
+
+// Is it progressively enhanced? WITHOUT JS
+// Are you using WAI-ARIA correctly?
