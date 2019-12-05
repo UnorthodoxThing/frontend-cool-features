@@ -76,3 +76,18 @@ the layout */
 .info-box .active-panel {
   z-index: 1;
 }
+
+/* With 'fake-contents' addition; more styling!! */
+.info-box {
+  position: fixed;
+  top: 0;
+}
+
+.fake-content {
+  background-color: #a60000;
+  color: white;
+  padding: 10px;
+  height: 2000px;
+  /* Move it over to the right, making space for the 'info-box' to sit in, so it is not overlappign anything else. */
+  margin-left: 470px;
+}
