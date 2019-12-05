@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>nav-bars-02</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="info-box">
+      <ul>
+        <li><a href="#" class="active">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+      </ul>
+
+      <div class="panels">
+        <article class="active-panel">
+          <h2>The first tab</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam veniam adipisci ab saepe cum quia.</p>
+        </article>
+        <article>
+          <h2>The second tab</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, quisquam, reprehenderit! Aut sit ex consequuntur!</p>
+        </article>
+        <article>
+          <h2>The third tab</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+            var tabs = document.querySelectorAll('.info-box li a');
+            var panels = document.querySelectorAll('.info-box article');
+
+            // Cycle through all the tabs and run a function called 'setTabHandler()' on each one,
+            // which sets up the functionality that should occure when each one is clicked on.
+            // When run, the function is passed a reference to the particular tab it is being run for,
+            // and an index number 'i' that identifies the tab's position in the 'tabs' array.
+            for(i = 0; i < tabs.length; i++) {
+              var tab = tabs[i];
+              setTabHandler(tab,i);
+            }
+
+            function setTabHandler(tab, tabPos) {
+              tab.onclick = function() {
+                // Cycle through all the tabs and remove any classes that are present on them
+                for(i = 0; i < tabs.length; i++) {
+                  tabs[i].className = '';
+                }
+
+                // A class of 'active' is set on the tab that was clicked on
+                tab.className = 'active';
+
+                // Cycle through all the panels and remove any classes that are present on them
+                for(i = 0; i < panels.length; i++) {
+                  panels[i].className = '';
+                }
+
+                // A class of 'active-panel' is set on the panel that corresponds to the tab that was clicked on
+                panels[tabPos].className = 'active-panel';
+              }
+            }
+    </script>
+  </body>
+</html>
