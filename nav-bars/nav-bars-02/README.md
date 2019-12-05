@@ -14,12 +14,20 @@ Sets or returns the class name of an element (the value of an element's class at
 
 Return Value: A String, representing the class, or a space-separated list of classes, of an element.
 
-## JS Explained
+## Hidden panel (Addition); not just a tabbed info-box sitting at the top of your browser!
 
-[Copy of code]
+[See in 'index1.html' coupled with style1.css]
 
-[Explaination below]
+A panel that slides on and off the screen at the press of an icon.
+
+Suitable for small screens, such as, mobile devices.
+
+Browser compatibility:
+
+IE9 and above.
+
+IE10 and above for the included smooth transition.
 
 ## Credits
 
-...
+- _MDN_

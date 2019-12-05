@@ -13,7 +13,7 @@ n/a
 
 ## nav-bars-02
 
-**A tabbed info-box**
+**A tabbed info-box**, and **A sliding hidden panel**
 
 A single page applications.
 
