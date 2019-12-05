@@ -1,0 +1,78 @@
+html {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.info-box {
+  width: 450px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* Styling the tab */
+/* REMOVES the default padding from the unordered list */
+.info-box ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.info-box li {
+  float: left;
+  list-style-type: none;
+  width: 150px;
+}
+
+.info-box li a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  /* Some style preferences below */
+  background-color: red;
+  line-height: 3;
+  color: black;
+}
+
+/* >Fix height to make sure the panels fit snugly inside the info-box,
+>`position: relative` to set the <div> as the positioning context, so
+you can place positioned child elements relative to it and not the <html> elements
+>`clear` the float set in the CSS so it doesn't interfere with the remainder of
+the layout */
+.info-box .panels {
+  height: 352px;
+  position: relative;
+  clear: both;
+}
+
+.info-box article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 352px;
+  padding: 10px;
+  color: white;
+  background-color: #a60000;
+}
+
+/* Utilities */
+.info-box li a:focus,
+.info-box li a:hover {
+  background-color: #a60000;
+  color: white;
+}
+
+.info-box li a.active {
+  background-color: #a60000;
+  color: white;
+}
+
+.info-box .active-panel {
+  z-index: 1;
+}
