@@ -1,4 +1,4 @@
-# nav-bars-02: A tabbed info-box
+# nav-bars-02: "A tabbed info-box"
 
 A tabbed bar in one page, without needing to reload.
 
@@ -14,9 +14,9 @@ Sets or returns the class name of an element (the value of an element's class at
 
 Return Value: A String, representing the class, or a space-separated list of classes, of an element.
 
-## Hidden panel (Addition); not just a tabbed info-box sitting at the top of your browser!
+## "A sliding hidden panel" (see 'index1.html' and 'style1.css'); not just a tabbed info-box sitting at the top of your browser!
 
-[See in 'index1.html' coupled with style1.css]
+! NOT COMPLETE
 
 A panel that slides on and off the screen at the press of an icon.
 
@@ -28,6 +28,8 @@ IE9 and above.
 
 IE10 and above for the included smooth transition.
 
+NOT suitable of screenreaders because of the abuse of form elements, and how the semantics are used. It is recommended to make it with JavaScript.
+
 ## Credits
 
-- _MDN_
+- _MDN_ - [Practical Positioning examples]()
