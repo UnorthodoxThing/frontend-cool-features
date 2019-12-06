@@ -193,6 +193,10 @@ Hide content from assistive technology, cannot be used on a focusable element, c
 
 + `aria-expanded`
 
+`true`: a section that this element denotes is currently expanded (visible).
+
+`false`: the expandable section or items is/are currently collapsed (invisible).
+
 ## Credits
 
 - _GTCoding_ - [How to Create Dropdown Menu using Flexbox Tutorial](https://youtu.be/B4d7Ct9wngs)
