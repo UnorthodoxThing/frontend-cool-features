@@ -7,6 +7,38 @@ There are various types of dropdowns. They may different with different display 
 
 WARNING: If anything changes from order, rename and reorder from repo and in this README file.
 
+## UI Patterns
+
+There are 3 types of dropdown for desktops.
+
+Vertical dropdown menu, Accordian menu, and horizontal dropdown menu.
+
+### Vertical dropdown menu, and Horizontal dropdown menu - Usage
+
+* Use when there are between 2-9 sections of content that need a hierarchal navigation structure.
+
+* Do not use when there is a need to single out the location of the current section of the site. (Then) use the navigation tabs.
+
+Solutions
+
+* On mouseout events (when the user takes his mouse away from the drop-down'ed box), add a delay before hiding the drop-down'ed box (typically 200-300ms (recommended: 200ms)).
+
+* Make the area of each menu item (_tap targets_) wider than just the text of the menu item so that the user has more space to put his mouse cursor over.
+
+Tap targets are links, buttons, ads and forms. Tap targets should have enough space around them for a fingertip to ensure users can tap their desired item without accidentally selecting another tap target.
+
+!: Smaller screens means smaller tap targets.
+
+For things like menus or call to action buttons, Google states that these should be at least 48 CSS pixels tall/wide. Google also recognises that not all tap target can be or should be 48 CSS pixels. They specify that if your tap targets are smaller than 48 CSS pixels, there should be at least be 32 CSS pixels between any tap targets.
+
+If you're getting a tap target size error on mobile SEO tools, this is usually because your tap targets are too close together, rather than the actual tap target being too small.
+
+* Change the cursor image as the user hovers over a list item.
+
+`a:hover {
+  cursor: pointer;
+  }`
+
 1. Dropdown menu ONE level
 
 ...
@@ -85,3 +117,7 @@ The IE only style sheet is loaded using the conditional comment
 
 See the following...
 - _Focus on Function_ - [Responsive CSS3 Multi-Level, Drop-Down Menu (no JavaScript)](http://fofwebdesign.co.uk/freebies-for-websites/css/multi-rwd-menu.htm)
+
+- - [tap targets](https://thecontentworks.uk/tap-targets/)
+
+- - [mobile friendly pages](https://thecontentworks.uk/mobile-friendly-pages/)
