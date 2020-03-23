@@ -15,6 +15,7 @@ A variety of frontend features developed through my learning of HTML5/CSS3 and J
 * [Picture-Cross-Fade](#Picture-Cross-Fade)
 * [Page-Transition-Effect](#Page-Transition-Effect)
 * [Search-Box](#Search-Box)
+* [Text Effects](#text-effects)
 * [Text-Effects-Glowing-Neon-Light](#Text-Effects-Glowing-Neon-Light)
 * [Loaders](#Loaders)
 
