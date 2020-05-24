@@ -115,6 +115,39 @@ HTML:
         </ul>
         </nav>
 
+* As a User:
+
+- I should be able to open the navigation with a keyboard.
+- As a user, I should be able to navigate even if JavaScript is not available.
+- As a user, I should be able to navigate using my screen reader
+
+* Don't hide the <nav>, if anything. Hide the <ul> instead.
+
+* `aria-hidden="true"` vs `role="presentation"`
+
+It’s true, that both these attributes will remove objects from the accessibility tree, but they act at different levels and report varying semantics to assistive technology.
+
+`role="presentation"`
+
+you’d use it when it doesn’t make sense for an image to have alternative text so it can be removed from the tree
+
+`aria-hidden="true"`
+
+_ARIA HIDING_
+
+Completely hiding an element from a screen reader is pretty common in a couple different situations:
+
+1. A UI element is detrimental or unimportant to assistive technology (you see this a lot with icons – for better or worse)
+2. You’re mimicking the visual UI (like menus opening and closing)
+
+Using `aria-hidden="true"` will completely remove all elements, child elements, and content from the accessibility tree regardless of the default semantic nature and they will remain removed until the aria state is changed to false it functions in much the same way as CSS’s `display:none`. This is where it differs from `role="presentation"`.
+
+When you’re thinking about removing an element from the accessibility tree first think, “Am I removing the element all together or just the semantics?” If you do that, it will be sure to lead you down the right path and make your UI all the more pleasurable for assistive technology to consume.
+
+* `role="menuitem"`
+
+In this implementation, an HTML button element reveals a menu structure made with an HTML ul element. The menuitem role is on the HTML a element contained by each li element so link behaviors are available when focus is set on the menu item. Another reason the menuitem role is not on the li element is that the semantics of descendants of ARIA menuitem elements are not exposed in the accessibility tree. That is, an item in a menu can only be a menuitem because accessibility APIs do not enable assistive technologies to render elements contained inside of an item in a menu.
+
 ## Browser Compatibility
 
 - CSS `:target` is not supported in IE 8 or earlier versions.
@@ -130,3 +163,7 @@ HTML:
 - _Useful Angle_ (website) - [CSS :focus-within](https://usefulangle.com/post/128/css-focus-within)
 
 - _Stefany Web Design_ (website) - [Accessible Hamburger Grid Navigation](https://youtu.be/GaXJzMHCn14)
+
+- [A11y Matters - Mobile Nav](https://www.a11ymatters.com/pattern/mobile-nav/)
+
+- _WAI ARIA_ [Menu Button Links](https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html)
