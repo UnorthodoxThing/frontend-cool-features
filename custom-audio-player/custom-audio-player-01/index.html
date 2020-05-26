@@ -3,30 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Custom Audio Player 1</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style1.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script1.js" defer></script>
   </head>
   <body>
 
-<!-- <div class="audio-player">
-  <audio>
-    <source src="kuku.mp3" type="audio/mp3">
+<!-- Single Song -->
+<p>Kuku by Mini Vandals</p>
+<!-- Fallbacks recommended -->
+<div class="audio-player">
+  <audio src="kuku.mp3" type="audio/mp3" controls>
+    <!-- <source src="kuku.mp3" type="audio/mp3"> -->
       <p>Your current browser does not support the file. Click  <a href="kuku.mp3">link to music</a> instead.</p>
   </audio>
 
-<p>Kuku by Mini Vandals</p>
-<label for="seek">Progress bar</label>
-<button type="button"></button>
-<progress id="seek" value="0" max="100">0%</progress>
-</div> -->
+<!-- Custom play / pause buttons -->
+<button id="play-pause-button" type="button" aria-label="play song">
+<img src="play.svg" alt="play pause button">
+</button>
 
-<div class="audio-player">
+    <div aria-label="progress bar" class="seek-bar">
+      <div class="fill-bar"></div>
+      <div class="handle"></div>
+    </div>
+</div>
+
+<!-- <div class="audio-player">
             <button class="play"><img src="play.svg" alt="play button" width="80" height="80"></button>
             <div class="seek-bar">
                 <div class="fill"></div>
                 <div class="handle"></div>
             </div>
-        </div>
+        </div> -->
 
   </body>
 </html>
