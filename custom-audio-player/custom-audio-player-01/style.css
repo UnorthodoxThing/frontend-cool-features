@@ -9,9 +9,8 @@
   align-items: center;
 }
 
-.play {
+button.play {
   display: block;
-  background: url(play.svg);
   width: 80px;
   height: 80px;
   border: 0;
