@@ -1,0 +1,54 @@
+/* Base Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+}
+
+.play {
+  display: block;
+  background: url(play.svg);
+  width: 80px;
+  height: 80px;
+  border: 0;
+  color: #eee;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.seek-bar {
+  margin: 30px;
+  width: 400px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.fill {
+  height: 10px;
+  /* width: 40px; */
+  background-color: #0af;
+  border-radius: 25px;
+}
+
+.handle {
+  width: 10px;
+  height: 10px;
+  background-color: #0af;
+  border-radius: 25px;
+  margin-left: -5px;
+  transform: scale(2);
+  transition: all 0.1s;
+}
+
+.handle:hover {
+  background-color: rgba(0, 170, 255, 0.7);
+  transform: scale(3);
+}
