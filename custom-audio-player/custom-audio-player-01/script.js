@@ -4,6 +4,8 @@ let audio = new Audio('kuku.mp3');
 let seekBar = document.querySelector('.seek-bar');
 let playButton = document.querySelector('button.play');
 let fillBar = seekBar.querySelector('.fill');
+
+let playPauseImg = document.querySelector('img');
 // TODO:
 // Change play button icon
 
@@ -13,14 +15,7 @@ let fillBar = seekBar.querySelector('.fill');
 
 let mouseDown = false;
 
-// play / pause image setup
-let playPauseImg = document.createElement('img');
-playPauseImg.style.height = '80px';
-playPauseImg.style.width = '80px';
-playPauseImg.src = 'play.svg';
-// let pauseImg = document.createElement('img');
-
-playButton.appendChild(playPauseImg);
+// playButton.appendChild(playPauseImg);
 
 // CONSIDER putting it in a fragment so it does not have to
 // be fetched from the server constantly
