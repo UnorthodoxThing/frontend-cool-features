@@ -34,3 +34,5 @@ I would have considered writing for older browser support, but the `audio` eleme
 ## Credits
 
 - _YouTube Audio Library_ - Kuku by Mini Vandals
+
+- _GeekLaunch_ - [Custom MUSIC PLAYER in JavaScript](https://youtu.be/7gG_UAx8aUU)
