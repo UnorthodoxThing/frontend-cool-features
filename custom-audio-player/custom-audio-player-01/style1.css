@@ -1,0 +1,63 @@
+/* Base Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Controller container */
+.audio-player {
+  display: flex;
+  align-items: center;
+}
+
+/* Play / Pause Icon */
+button#play-pause-button {
+  display: block;
+  width: 80px;
+  height: 80px;
+  color: #eee;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.seek-bar {
+  /* Give some space from the button */
+  margin-left: 30px;
+
+  /* Define width of the seek-bar and other style */
+  width: 400px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 25px;
+
+  /* Align to center */
+  display: flex;
+  align-items: center;
+}
+
+.fill-bar {
+  /* Style fill-bar */
+  height: 10px;
+  /* width: 40px; */
+  background-color: #0af;
+  border-radius: 25px;
+}
+
+.handle {
+  /* Style handle */
+  width: 10px;
+  height: 10px;
+  background-color: #0af;
+  border-radius: 25px;
+
+  /* Sets it to the tip of the seek bar */
+  margin-left: -5px;
+
+  transform: scale(2);
+  transition: all 0.1s;
+}
+
+.handle:hover {
+  background-color: rgba(0, 170, 255, 0.7);
+  transform: scale(3);
+}
