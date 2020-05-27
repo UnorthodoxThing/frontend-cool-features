@@ -5,7 +5,12 @@
 }
 
 /* Controller container */
-.audio-player {
+.audio-player-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
   display: flex;
   align-items: center;
 }
@@ -38,7 +43,7 @@ button#play-pause-button {
 .fill-bar {
   /* Style fill-bar */
   height: 10px;
-  /* width: 40px; */
+  width: 0;
   background-color: #0af;
   border-radius: 25px;
 }
