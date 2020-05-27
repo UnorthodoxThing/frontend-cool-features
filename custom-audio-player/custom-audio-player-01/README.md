@@ -21,6 +21,14 @@
 
 Build with `<audio>` (browser Compatibility) and accessibility.
 
+recommended:
+
+- [ ] scrubber
+- [ ] skip n-seconds
+- [ ] play / pause button
+- [ ] video / audio speed
+- [ ] video / audio volume
+
 ## Keynotes
 
 * `<progress>` [HTML]
@@ -94,6 +102,18 @@ Play Icon Button:
 Pause Icon Button:
         <svg viewBox="0 0 56 56" preserveAspectRatio="xMidYMid meet" fill="none"><path fill="#FFFFFF" d="M14,44.3333333 L23.3333333,44.3333333 L23.3333333,11.6666667 L14,11.6666667 L14,44.3333333 Z M32.6666667,11.6666667 L32.6666667,44.3333333 L42,44.3333333 L42,11.6666667 L32.6666667,11.6666667 Z"></path><polygon points="0 0 56 0 56 56 0 56"></polygon></svg>
 
+* radix
+
+Radix is a Latin word for "root". Root can be considered a synonym for base, in the arithmetical sense.
+
+e.g.
+
+2 is Binary numeral system.
+
+8 is Octal system.
+
+10 is Decimal system.
+
 ## Developer's Notes
 
 I would have considered writing for older browser support, but the `audio` element doesn't exist till IE9.
@@ -115,3 +135,5 @@ The `<audio>` tag is used for one or few (not a lot) and heeds customisation. It
 - _MDN_ [Cross-browser audio basics](https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Cross-browser_audio_basics)
 
 - _CSS-Tricks_ [The HTML5 progress Element](https://css-tricks.com/html5-progress-element/)
+
+- _Wes Bos_ [Custom HTML5 Video Player](https://youtu.be/yx-HYerClEA)
